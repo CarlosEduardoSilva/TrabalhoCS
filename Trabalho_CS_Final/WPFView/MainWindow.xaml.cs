@@ -34,19 +34,15 @@ namespace WPFView
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        
+        private void BuscarTodos_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click_List(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow();
             ListarClientes listar = new ListarClientes();
-            main.Close();
-            listar.Show();
+            
+            listar.ShowDialog();
 
         }
+
 
     }
 }

@@ -34,7 +34,7 @@ namespace WPFView
 
         }
 
-        private void dgClientesdgCliente_SelectionChanged(object sender, SelectedCellsChangedEventArgs e)
+        private void dgClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = ((DataGrid)sender);
 

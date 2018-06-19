@@ -13,7 +13,7 @@ namespace Controllers.DAL
         {
 
         }
-        public virtual DbSet<Atividade> Atividades { get; set; }
-
+        public virtual DbSet<ClienteController> Clientes { get; set; }
+        
     }
 }

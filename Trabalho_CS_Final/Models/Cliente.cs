@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class ModelCliente
+    public class Cliente
     {
         public int ID_Cliente { get; set; }
 
@@ -17,6 +17,8 @@ namespace Models
         public string Senha { get; set; }
 
         public string Email { get; set; }
+
+        public bool Ativo { get; set; }
 
         public int ID_Plano { get; set; }
 

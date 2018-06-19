@@ -49,6 +49,11 @@ namespace WPFView
             }
         }
 
+        private void btn_CancelarClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
 
     }
 }

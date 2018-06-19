@@ -21,6 +21,9 @@ namespace Models
         [Required, StringLength(30)]
         public string Email { get; set; }
 
+
+        
+
         public bool Ativo { get; set; }
 
        // public int ID_Plano { get; set; }

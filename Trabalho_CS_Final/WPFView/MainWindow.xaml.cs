@@ -25,7 +25,7 @@ namespace WPFView
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnCadastrarClientes_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             Cadastrar cadastro = new Cadastrar();
@@ -35,7 +35,7 @@ namespace WPFView
         }
 
         
-        private void BuscarTodos_Click(object sender, RoutedEventArgs e)
+        private void btnListarClientes_Click(object sender, RoutedEventArgs e)
         {
             ListarClientes listar = new ListarClientes();
             

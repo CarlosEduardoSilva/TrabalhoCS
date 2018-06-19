@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Listar" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="dgCliente" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" SelectionChanged="dgClientes_SelectionChanged"/>
+        <DataGrid x:Name="dgClientes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
+                  CanUserAddRows="False" 
+                  CanUserDeleteRows="False" Height="249" Width="354" SelectionChanged="dgClientes_SelectionChanged"/>
+
     </Grid>
 </Window>

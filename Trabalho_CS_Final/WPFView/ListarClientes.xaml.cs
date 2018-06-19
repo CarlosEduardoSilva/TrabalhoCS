@@ -30,7 +30,7 @@ namespace WPFView
         private void Window_loaded(object sender, RoutedEventArgs e)
         {
             ClienteController clienteController = new ClienteController();
-            dgCliente.ItemsSource = clienteController.BuscarTodos();
+            dgClientes.ItemsSource = clienteController.BuscarTodos();
 
         }
 
@@ -41,7 +41,8 @@ namespace WPFView
             Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
         }
 
-
-
+       
     }
+
+
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,9 +26,29 @@ namespace WPFView
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                Cliente cliente = new Cliente();
 
+                cliente.Nome = txtNome.Text;
+                cliente.Login = txtLogin.Text;
+                cliente.Email = txtEmail.Text;
+                cliente.Senha = txtSenha.Text;
+
+                ClienteController clienteController = new ClienteController();
+                clienteController.Salvar(cliente);
+
+                MessageBox.Show("Usuario salvo com exito!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar o usuário (" + ex.Message + ")");
+                
+            }
         }
+
+
     }
 }

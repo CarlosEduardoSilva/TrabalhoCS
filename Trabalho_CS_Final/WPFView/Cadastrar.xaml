@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="Cadastrar" Height="450" Width="800">
     <Grid>
-        <Button Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="526,191,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="526,191,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
         <Label Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="129,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
         <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="129,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567"/>
         <Label Content="E-mail&#xA;" HorizontalAlignment="Left" Margin="129,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
         <Label Content="Senha&#xA;" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="253,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="253,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="253,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="253,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="253,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="253,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="253,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="253,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
 
     </Grid>
 </Window>

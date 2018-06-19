@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:WPFView"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,208,479,0">
+
+
+        <Image Margin="55,-161,-19,203">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="300" UriSource="C:\Users\Carlos\Documents\Projetos Ilustrator\duoplus.png" />
+            </Image.Source>
+        </Image>
+        <Button Content="Cadastrar" Margin="448,-114,-385,127" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="198" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="250" IsDefault="True" FontSize="20"/>
+
+
     </Grid>
 </Window>

@@ -30,7 +30,7 @@ namespace Controllers
 
         public void Excluir(int ID_Cliente)
         {
-            ClienteController u = Buscar(ID_Cliente);
+            Cliente u = Buscar(ID_Cliente);
 
             if (u != null)
             {
@@ -39,12 +39,12 @@ namespace Controllers
             }
         }
 
-        public ClienteController Buscar(int ID_Cliente)
+        public Cliente Buscar(int ID_Cliente)
         {
             return contexto.Clientes.Find(ID_Cliente);
         }
 
-        public List<ClienteController> BuscarTodos()
+        public List<Cliente> BuscarTodos()
         {
             return contexto.Clientes.ToList();
         }

@@ -10,30 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPFView
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para Cadastrar.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Cadastrar : Window
     {
-        public MainWindow()
+        public Cadastrar()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            Cadastrar cadastro = new Cadastrar();
-            main.Close();
-            cadastro.Show();
 
         }
-
-        
     }
 }

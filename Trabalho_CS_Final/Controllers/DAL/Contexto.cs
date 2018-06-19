@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Controllers.DAL
         {
 
         }
-        public virtual DbSet<ClienteController> Clientes { get; set; }
+        public virtual DbSet<Cliente> Clientes { get; set; }
         
     }
 }

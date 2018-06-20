@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPFView.Excluir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFView"
+        mc:Ignorable="d"
+        Title="Excluir" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="270,142,0,0" VerticalAlignment="Top" Width="210" Click="btnExcluir_Click" Height="92"/>
+
+    </Grid>
+</Window>

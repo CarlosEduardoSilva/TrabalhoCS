@@ -69,6 +69,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Excluir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListaExcluir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListarClientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -86,6 +94,12 @@
     </Compile>
     <Compile Include="Editar.xaml.cs">
       <DependentUpon>Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir.xaml.cs">
+      <DependentUpon>Excluir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListaExcluir.xaml.cs">
+      <DependentUpon>ListaExcluir.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>

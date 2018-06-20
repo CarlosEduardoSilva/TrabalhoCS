@@ -47,9 +47,18 @@ namespace WPFView
 
         }
 
-       
-        
-        
+
+        private void btnExcluirCliente_Click(object sender, RoutedEventArgs e)
+        {
+            ListaExcluir excluir = new ListaExcluir();
+
+            excluir.ShowDialog();
+
+        }
+
+
+
+
 
 
     }

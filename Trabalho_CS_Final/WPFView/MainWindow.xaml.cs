@@ -30,11 +30,15 @@ namespace WPFView
             MainWindow main = new MainWindow();
             Cadastrar cadastro = new Cadastrar();
             main.Close();
-            cadastro.Show();
+            //cadastro.Show();
+
+            
+            cadastro.ShowDialog();
+            //this.Close();
 
         }
 
-        
+
         private void btnListarClientes_Click(object sender, RoutedEventArgs e)
         {
             ListarClientes listar = new ListarClientes();

@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace WPFView
 {
-    /// <summary>
-    /// Lógica interna para Listar.xaml
-    /// </summary>
     public partial class ListarClientes : Window
     {
         public ListarClientes()
@@ -27,7 +24,7 @@ namespace WPFView
         }
 
 
-        private void Window_loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             ClienteController clienteController = new ClienteController();
             dgClientes.ItemsSource = clienteController.BuscarTodos();
@@ -40,8 +37,6 @@ namespace WPFView
 
             Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
         }
-
-       
     }
 
 

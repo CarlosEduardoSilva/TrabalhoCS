@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFView"
         mc:Ignorable="d"
-        Title="Listar" Height="450" Width="800">
-    <Grid>
+        Title="Listar" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0,0,0,-1">
         <DataGrid x:Name="dgClientes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
                   CanUserAddRows="False" 
-                  CanUserDeleteRows="False" Height="249" Width="354" SelectionChanged="dgClientes_SelectionChanged"/>
+                  CanUserDeleteRows="False" Height="400" Width="772" SelectionChanged="dgClientes_SelectionChanged"/>
 
     </Grid>
 </Window>

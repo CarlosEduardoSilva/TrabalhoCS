@@ -19,8 +19,8 @@
             </Image.Source>
         </Image>
         <Button Name="btnCadastroCliente" Content="Cadastrar" Margin="448,-114,-265,150" Click="btnCadastrarClientes_Click" RenderTransformOrigin="-0.565,-0.01" Height="77" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button Name="btnListarClientes" Content="Listar Clientes" Click="btnListarClientes_Click" Margin="618,-114,-428,150" Background="#FF2DA5D3" FontSize="16" />
-        <Button Content="Editar" HorizontalAlignment="Left" Margin="448,2,-265,0" VerticalAlignment="Top" Width="130" Height="77" Background="#FF2DA5D3" FontSize="16"/>
+        <Button Name="btnListarClientes" Content="Listar / Editar" Click="btnListarClientes_Click" Margin="618,-114,-428,150" Background="#FF2DA5D3" FontSize="16" />
+        <Button Name="btnExcluirCliente" Content="Excluir" Margin="448,0,-265,31" Click="btnExcluirClientes_Click" RenderTransformOrigin="-0.565,-0.01" Height="77" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
 
     </Grid>
 </Window>

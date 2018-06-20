@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,51 @@ namespace WPFView
     /// </summary>
     public partial class Editar : Window
     {
-        public Editar()
+        private Cliente _cli;
+
+        public Editar(Cliente cli)
         {
             InitializeComponent();
+            _cli = cli;
+            pegarCli(_cli);
+        }
+
+        private void BuscarId_Click(object sender, RoutedEventArgs e)
+        {
+
+            Cliente clienteId = new Cliente();
+
+            //clienteId.ID_Cliente = txtBuscarId.Text;
+        }
+
+        public void pegarCli(Cliente _cli)
+        {
+            txtNome.Text =  _cli.Nome;
+            txtLogin.Text = _cli.Login;
+            txtEmail.Text = _cli.Email;
+            txtSenha.Text = _cli.Senha;
+
+        }
+
+        private void btnAtualizar_Click(object sender, RoutedEventArgs e)
+        {
+
+            ClienteController clienteController = new ClienteController();
+            _cli.Nome = txtNome.Text;
+            _cli.Login = txtLogin.Text;
+            _cli.Email = txtEmail.Text;
+            _cli.Senha = txtSenha.Text;
+            clienteController.Atualizar(_cli);
+
+            MessageBox.Show("Usuario editado com exito!");
+
+            this.Close();
+
+
         }
     }
+
+
+    
+
 }

@@ -26,17 +26,30 @@ namespace WPFView
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
             ClienteController clienteController = new ClienteController();
             dgClientes.ItemsSource = clienteController.BuscarTodos();
 
         }
 
-        private void dgClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void dgClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = ((DataGrid)sender);
 
             Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
+                        
+            Editar editar = new Editar(cli);
+
+           
+            editar.Show();
+
+            this.Close();
+
+            
+
         }
+
+        
     }
 
 

@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class HD
+    class PlacaMae
     {
 
-        public int ID_HD { get; set; }
+        public int ID_PlacaMae { get; set; }
 
         public string Nome { get; set; }
 
         public decimal Valor { get; set; }
-
     }
 }

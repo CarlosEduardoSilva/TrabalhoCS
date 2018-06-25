@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class HD
+    class Memoria
     {
 
-        public int ID_HD { get; set; }
+        public int ID_Memoria { get; set; }
 
         public string Nome { get; set; }
 

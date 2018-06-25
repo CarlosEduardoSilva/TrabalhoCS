@@ -23,5 +23,36 @@ namespace WPFView
         {
             InitializeComponent();
         }
+
+        private void btnCadastrarPecas_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            Cadastrar cadastro = new Cadastrar();
+            main.Close();
+            //cadastro.Show();
+
+
+            cadastro.ShowDialog();
+            //this.Close();
+
+        }
+
+
+        private void btnListarPecas_Click(object sender, RoutedEventArgs e)
+        {
+            ListarClientes listar = new ListarClientes();
+
+            listar.ShowDialog();
+
+        }
+
+
+        private void btnExcluirPecas_Click(object sender, RoutedEventArgs e)
+        {
+            ListaExcluir excluir = new ListaExcluir();
+
+            excluir.ShowDialog();
+
+        }
     }
 }

@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainPeca" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnCadastroCliente" Content="Placa Mãe" BorderBrush="Aqua"   Margin="75,0,587,331" Click="btnCadastrarPecas_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3" Padding="1,-1,1,1"/>
+        <Button x:Name="btnListarClientes" Content="Processador" Click="btnListarPecas_Click" Margin="75,93,587,276" Background="#FF2DA5D3" FontSize="16" />
+        <Button x:Name="btnExcluirCliente" Content="HD" Margin="75,0,587,221" Click="btnExcluirPecas_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
+        <Button x:Name="btnExcluirCliente_Copy" Content="Fonte" Margin="75,0,587,166" Click="btnExcluirPecas_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
+        <Button x:Name="btnExcluirCliente_Copy1" Content="Memoria" Margin="75,0,587,111" Click="btnExcluirPecas_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
+
     </Grid>
 </Window>

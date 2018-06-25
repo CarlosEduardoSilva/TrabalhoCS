@@ -13,7 +13,7 @@
         <Image Margin="71,-111,-34,190">
             <Image.Source>
 
-                <BitmapImage DecodePixelWidth="300" UriSource="C:\Users\Carlos\OneDrive\Notebook\Faculdade\CS\Trabalho_CS_Final\Trabalho_CS_Final\Imagens/duoplus.png" />
+                <BitmapImage DecodePixelWidth="300" UriSource="C:\Users\Carlos\OneDrive\Notebook\Faculdade\CS\Trabalho_CS_Final\Trabalho_CS_Final/Imagens/duoplus.png" />
                 
             </Image.Source>
         </Image>

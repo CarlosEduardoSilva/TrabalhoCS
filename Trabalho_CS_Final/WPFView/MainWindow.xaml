@@ -7,17 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="448" Width="800">
     <Grid Margin="0,208,479,0">
-        
+
 
 
         <Image Margin="71,-111,-34,190">
             <Image.Source>
+                
                 <BitmapImage DecodePixelWidth="300" UriSource="C:\Users\Carlos\Documents\Projetos Ilustrator\duoplus.png" />
+                
             </Image.Source>
         </Image>
-        <Button Name="btnCadastroCliente" Content="Cadastrar" Margin="448,-111,-265,270" Click="btnCadastrarClientes_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
+        <Button Name="btnCadastroCliente" Content="Cadastrar" BorderBrush="Aqua"   Margin="449,-111,-265,270" Click="btnCadastrarClientes_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3" Padding="1,-1,1,1" Grid.ColumnSpan="6"/>
         <Button Name="btnListarClientes" Content="Listar / Editar" Click="btnListarClientes_Click" Margin="448,-56,-265,215" Background="#FF2DA5D3" FontSize="16" />
         <Button Name="btnExcluirCliente" Content="Excluir" Margin="448,-1,-265,160" Click="btnExcluirCliente_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-
+        
     </Grid>
 </Window>

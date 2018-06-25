@@ -11,7 +11,6 @@ namespace Controllers
 {
     class HDController : BaseManager<HD>
     {
-        
         private Contexto contexto = new Contexto();
 
         public void Atualizar(HD entidade)

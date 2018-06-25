@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class PlacaMae
+    public class PlacaMae
     {
         [Key]
         public int ID_PlacaMae { get; set; }

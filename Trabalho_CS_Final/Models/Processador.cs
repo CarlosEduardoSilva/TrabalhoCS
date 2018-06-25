@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Processador
+    public class Processador
     {
         [Key]
         public int ID_Processador { get; set; }

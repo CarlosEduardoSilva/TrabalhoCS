@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Fonte
+    public class Fonte
     {
         [Key]
         public int ID_Fonte { get; set; }

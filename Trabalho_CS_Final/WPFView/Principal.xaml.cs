@@ -23,5 +23,33 @@ namespace WPFView
         {
             InitializeComponent();
         }
+
+        
+        private void Btn_Cadastro_Click(object sender, RoutedEventArgs e)
+        {
+            Principal pri = new Principal();
+            MainWindow cad = new MainWindow();
+
+            cad.ShowDialog();
+            pri.Close();
+
+        }
+
+        private void Btn_Pecas_Click(object sender, RoutedEventArgs e)
+        {
+            MainPeca pec = new MainPeca();
+
+            pec.ShowDialog();
+
+
+        }
+
+        private void Btn_Computador_Click(object sender, RoutedEventArgs e)
+        {
+            MainCoputador com = new MainCoputador();
+
+            com.ShowDialog();
+
+        }
     }
 }

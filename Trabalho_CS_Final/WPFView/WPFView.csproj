@@ -82,7 +82,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainProduto.xaml">
+    <Page Include="MainCoputador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPeca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,8 +113,11 @@
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainProduto.xaml.cs">
-      <DependentUpon>MainProduto.xaml</DependentUpon>
+    <Compile Include="MainCoputador.xaml.cs">
+      <DependentUpon>MainCoputador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPeca.xaml.cs">
+      <DependentUpon>MainPeca.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

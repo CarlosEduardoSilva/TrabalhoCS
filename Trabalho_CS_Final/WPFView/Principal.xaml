@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="Principal" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="283*"/>
+            <ColumnDefinition Width="509*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="AbrirClientes" Content="Cadastrar Cliente" Grid.Column="1" HorizontalAlignment="Left" Margin="207,81,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Btn_Cadastro_Click" Background="#FF2DA5D3"/>
+        <Button Name="AbrirPecas" Content="Cadastrar peças" Grid.Column="1" HorizontalAlignment="Left" Margin="207,145,0,0" VerticalAlignment="Top" Width="150" Height="50" Background="#FF2DA5D3" Click="Btn_Pecas_Click"/>
+        <Button Name="AbrirComputadores" Content="Montar Computador " Grid.Column="1" HorizontalAlignment="Left" Margin="207,213,0,0" VerticalAlignment="Top" Width="150" Height="50" Background="#FF2DA5D3" Click="Btn_Computador_Click"/>
+
     </Grid>
 </Window>

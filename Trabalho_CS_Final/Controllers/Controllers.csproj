@@ -54,6 +54,15 @@
     <Compile Include="FonteController.cs" />
     <Compile Include="HDController.cs" />
     <Compile Include="MemoriaController.cs" />
+    <Compile Include="Migrations\201806251131002_InitialCreate.cs" />
+    <Compile Include="Migrations\201806251131002_InitialCreate.Designer.cs">
+      <DependentUpon>201806251131002_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806251349081_Mudanca.cs" />
+    <Compile Include="Migrations\201806251349081_Mudanca.Designer.cs">
+      <DependentUpon>201806251349081_Mudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlacaMaeController.cs" />
     <Compile Include="ProcessadorController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +76,14 @@
       <Project>{c2ff2f61-213e-4164-96c9-271afa55fe3f}</Project>
       <Name>Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806251131002_InitialCreate.resx">
+      <DependentUpon>201806251131002_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806251349081_Mudanca.resx">
+      <DependentUpon>201806251349081_Mudanca.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -73,5 +73,33 @@ namespace WPFView
 
 
         }
+        private void btnProcessadorListar_Click(object sender, RoutedEventArgs e)
+        {
+            ProcessadorListar lis = new ProcessadorListar();
+            lis.Show();
+
+
+        }
+        private void btnHdListar_Click(object sender, RoutedEventArgs e)
+        {
+            HDListar hd = new HDListar();
+            hd.Show();
+
+
+        }
+        private void btnFonteListar_Click(object sender, RoutedEventArgs e)
+        {
+            FonteListar fon = new FonteListar();
+            fon.Show();
+
+
+        }
+        private void btnMemoriaListar_Click(object sender, RoutedEventArgs e)
+        {
+            MemoriaListar mem = new MemoriaListar();
+            mem.Show();
+
+
+        }
     }
 }

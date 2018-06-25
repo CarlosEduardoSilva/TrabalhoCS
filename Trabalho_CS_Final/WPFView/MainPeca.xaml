@@ -12,9 +12,13 @@
         <Button x:Name="btnCadastroHd" Content="HD" Margin="75,0,587,221" Click="btnHd_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
         <Button x:Name="btnCadastroFonte" Content="Fonte" Margin="75,0,587,166" Click="btnFonte_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
         <Button x:Name="btnCadastroMemoria" Content="Memoria" Margin="75,0,587,111" Click="btnMemoria_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button x:Name="btnListarPlacaMae" Content="Placa Mãe" Click="btnPlacaListar_Click" Margin="520,38,142,331" Background="#FF2DA5D3" FontSize="16" />
+        <Button x:Name="btnListarPlacaMae" Content="Placa Mãe" Click="btnPlacaListar_Click" Margin="520,36,142,333" Background="#FF2DA5D3" FontSize="16" />
         <Label Content="Cadastrar" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Width="150" Height="48" FontSize="16"/>
         <Label Content="Listar" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="btnListarProcessador" Content="Processador" Click="btnProcessadorListar_Click" Margin="520,93,142,276" Background="#FF2DA5D3" FontSize="16" />
+        <Button x:Name="btnListarHd" Content="HD" Click="btnHdListar_Click" Margin="520,150,142,219" Background="#FF2DA5D3" FontSize="16" />
+        <Button x:Name="btnListarFonte" Content="Fonte" Click="btnFonteListar_Click" Margin="520,205,142,164" Background="#FF2DA5D3" FontSize="16" />
+        <Button x:Name="btnListarMemoria" Content="Memoria RAM" Click="btnMemoriaListar_Click" Margin="520,260,142,109" Background="#FF2DA5D3" FontSize="16" />
 
     </Grid>
 </Window>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Memoria
+    public class Memoria
     {
         [Key]
         public int ID_Memoria { get; set; }

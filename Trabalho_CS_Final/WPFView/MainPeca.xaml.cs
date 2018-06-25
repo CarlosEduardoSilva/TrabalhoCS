@@ -35,33 +35,41 @@ namespace WPFView
 
         private void btnProcessador_Click(object sender, RoutedEventArgs e)
         {
-            ListarClientes listar = new ListarClientes();
+            ProcessadorCadastro pro = new ProcessadorCadastro();
 
-            listar.ShowDialog();
+            pro.ShowDialog();
 
         }
 
 
         private void btnHd_Click(object sender, RoutedEventArgs e)
         {
-            ListaExcluir excluir = new ListaExcluir();
+            HdCadastro hd = new HdCadastro();
 
-            excluir.ShowDialog();
+            hd.ShowDialog();
 
         }
 
         private void btnFonte_Click(object sender, RoutedEventArgs e)
         {
-            PlacaCadastro pla = new PlacaCadastro();
-            pla.Show();
+            FonteCadastro fon = new FonteCadastro();
+            fon.Show();
 
 
         }
 
         private void btnMemoria_Click(object sender, RoutedEventArgs e)
         {
-            PlacaCadastro pla = new PlacaCadastro();
-            pla.Show();
+            MemoriaCadastro mem = new MemoriaCadastro();
+            mem.Show();
+
+
+        }
+
+        private void btnPlacaListar_Click(object sender, RoutedEventArgs e)
+        {
+            PlacaListar lis = new PlacaListar();
+            lis.Show();
 
 
         }

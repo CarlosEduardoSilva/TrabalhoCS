@@ -14,7 +14,6 @@ namespace Controllers
 
         public void Salvar(Cliente entity)
         {
-            
             entity.Ativo = true;
             contexto.Clientes.Add(entity);
             contexto.SaveChanges();

@@ -15,27 +15,37 @@ namespace Controllers
 
         public void Atualizar(HD entidade)
         {
-            throw new NotImplementedException();
+            contexto.Entry(entidade).State =
+            System.Data.Entity.EntityState.Modified;
+
+            contexto.SaveChanges();
         }
 
         public HD Buscar(int id)
         {
-            throw new NotImplementedException();
+            return contexto.HD.Find(id);
         }
 
         public List<HD> BuscarTodos()
         {
-            throw new NotImplementedException();
+            return contexto.HD.ToList();
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            HD p = Buscar(id);
+
+            if (p != null)
+            {
+                contexto.HD.Remove(p);
+                contexto.SaveChanges();
+            }
         }
 
         public void Salvar(HD entidade)
         {
-            throw new NotImplementedException();
+            contexto.HD.Add(entidade);
+            contexto.SaveChanges();
         }
     }
 }

@@ -13,27 +13,37 @@ namespace Controllers
         private Contexto contexto = new Contexto();
         public void Atualizar(PlacaMae entidade)
         {
-            throw new NotImplementedException();
+            contexto.Entry(entidade).State =
+            System.Data.Entity.EntityState.Modified;
+
+            contexto.SaveChanges();
         }
 
         public PlacaMae Buscar(int id)
         {
-            throw new NotImplementedException();
+            return contexto.PlacaMae.Find(id);
         }
 
         public List<PlacaMae> BuscarTodos()
         {
-            throw new NotImplementedException();
+            return contexto.PlacaMae.ToList();
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            PlacaMae p = Buscar(id);
+
+            if (p != null)
+            {
+                contexto.PlacaMae.Remove(p);
+                contexto.SaveChanges();
+            }
         }
 
         public void Salvar(PlacaMae entidade)
         {
-            throw new NotImplementedException();
+            contexto.PlacaMae.Add(entidade);
+            contexto.SaveChanges();
         }
     }
 }

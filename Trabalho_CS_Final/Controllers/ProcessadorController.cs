@@ -13,22 +13,31 @@ namespace Controllers
         private Contexto contexto = new Contexto();
         public void Atualizar(Processador entidade)
         {
-            throw new NotImplementedException();
+            contexto.Entry(entidade).State =
+            System.Data.Entity.EntityState.Modified;
+
+            contexto.SaveChanges();
         }
 
         public Processador Buscar(int id)
         {
-            throw new NotImplementedException();
+            return contexto.Processador.Find(id);
         }
 
         public List<Processador> BuscarTodos()
         {
-            throw new NotImplementedException();
+            return contexto.Processador.ToList();
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            Processador p = Buscar(id);
+
+            if (p != null)
+            {
+                contexto.Processador.Remove(p);
+                contexto.SaveChanges();
+            }
         }
 
         public void Salvar(Processador entidade)

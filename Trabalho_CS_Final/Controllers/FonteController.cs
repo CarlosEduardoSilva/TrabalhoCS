@@ -13,27 +13,37 @@ namespace Controllers
         private Contexto contexto = new Contexto();
         public void Atualizar(Fonte entidade)
         {
-            throw new NotImplementedException();
+            contexto.Entry(entidade).State =
+            System.Data.Entity.EntityState.Modified;
+
+            contexto.SaveChanges();
         }
 
         public Fonte Buscar(int id)
         {
-            throw new NotImplementedException();
+            return contexto.Fonte.Find(id);
         }
 
         public List<Fonte> BuscarTodos()
         {
-            throw new NotImplementedException();
+            return contexto.Fonte.ToList();
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            Fonte p = Buscar(id);
+
+            if (p != null)
+            {
+                contexto.Fonte.Remove(p);
+                contexto.SaveChanges();
+            }
         }
 
         public void Salvar(Fonte entidade)
         {
-            throw new NotImplementedException();
+            contexto.Fonte.Add(entidade);
+            contexto.SaveChanges();
         }
     }
 }

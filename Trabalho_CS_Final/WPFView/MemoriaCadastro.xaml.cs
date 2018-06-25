@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +25,32 @@ namespace WPFView
         {
             InitializeComponent();
         }
+
+        private void BtnCad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Memoria me = new Memoria();
+
+                me.Nome = txtNome.Text;
+                me.Valor = decimal.Parse(txtValor.Text);
+
+
+                MemoriaController memoria= new MemoriaController();
+                memoria.Salvar(me);
+
+
+                MessageBox.Show("Memoria salva com exito!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao salvar Memoria (" + ex.Message + ")");
+            }
+
+
+        }
+
     }
 }

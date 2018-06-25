@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +25,32 @@ namespace WPFView
         {
             InitializeComponent();
         }
+
+        private void BtnCad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Fonte fo = new Fonte();
+
+                fo.Nome = txtNome.Text;
+                fo.Valor = decimal.Parse(txtValor.Text);
+
+
+                FonteController fonte = new FonteController();
+                fonte.Salvar(fo);
+
+
+                MessageBox.Show("Fonte salva com exito!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao salvar Fonte (" + ex.Message + ")");
+            }
+
+
+        }
+
     }
 }

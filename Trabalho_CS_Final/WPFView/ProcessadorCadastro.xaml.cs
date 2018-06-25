@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,32 @@ namespace WPFView
         public ProcessadorCadastro()
         {
             InitializeComponent();
+        }
+
+        private void BtnCad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Processador pro = new Processador();
+
+                pro.Nome = txtNome.Text;
+                pro.Valor = decimal.Parse(txtValor.Text);
+
+
+                ProcessadorController processador = new ProcessadorController();
+                processador.Salvar(pro);
+
+
+                MessageBox.Show("Procesador salvo com exito!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao salvar o processador (" + ex.Message + ")");
+            }
+
+
         }
     }
 }

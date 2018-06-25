@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +25,32 @@ namespace WPFView
         {
             InitializeComponent();
         }
+        private void BtnCad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                HD hd = new HD();
+
+                hd.Nome = txtNome.Text;
+                hd.Valor = decimal.Parse(txtValor.Text);
+
+
+                HDController hde = new HDController();
+                hde.Salvar(hd);
+
+
+                MessageBox.Show("HD salvo com exito!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao salvar HD (" + ex.Message + ")");
+            }
+
+
+        }
+
+
     }
 }

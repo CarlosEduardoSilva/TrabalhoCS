@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class ProcessadorController : BaseManager<Processador>
+    public class ProcessadorController : BaseManager<Processador>
     {
         private Contexto contexto = new Contexto();
         public void Atualizar(Processador entidade)

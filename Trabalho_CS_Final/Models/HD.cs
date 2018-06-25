@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Processador
+    class HD
     {
 
-        public int ID_Processador { get; set; }
+        public int ID_HD { get; set; }
 
         public string Nome { get; set; }
 
-        public decimal Valor { get; set; }
+        public int Valor { get; set; }
 
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class FonteController : BaseManager<Fonte>
+    public class FonteController : BaseManager<Fonte>
     {
         private Contexto contexto = new Contexto();
         public void Atualizar(Fonte entidade)

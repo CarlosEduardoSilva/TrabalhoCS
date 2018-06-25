@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class MemoriaController : BaseManager<Memoria>
+   public class MemoriaController : BaseManager<Memoria>
     {
         private Contexto contexto = new Contexto();
         public void Atualizar(Memoria entidade)

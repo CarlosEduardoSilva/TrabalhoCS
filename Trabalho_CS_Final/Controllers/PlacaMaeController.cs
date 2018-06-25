@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class PlacaMaeController : BaseManager<PlacaMae>
+    public class PlacaMaeController : BaseManager<PlacaMae>
     {
         private Contexto contexto = new Contexto();
         public void Atualizar(PlacaMae entidade)

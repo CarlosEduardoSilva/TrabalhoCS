@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Controllers 
 {
-    class HDController : BaseManager<HD>
+    public class HDController : BaseManager<HD>
     {
         private Contexto contexto = new Contexto();
 

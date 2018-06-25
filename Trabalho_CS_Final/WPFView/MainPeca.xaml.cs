@@ -24,21 +24,16 @@ namespace WPFView
             InitializeComponent();
         }
 
-        private void btnCadastrarPecas_Click(object sender, RoutedEventArgs e)
+        private void btnPlaca_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            Cadastrar cadastro = new Cadastrar();
-            main.Close();
-            //cadastro.Show();
+            PlacaCadastro pla = new PlacaCadastro();
+            pla.Show();
 
-
-            cadastro.ShowDialog();
-            //this.Close();
 
         }
 
 
-        private void btnListarPecas_Click(object sender, RoutedEventArgs e)
+        private void btnProcessador_Click(object sender, RoutedEventArgs e)
         {
             ListarClientes listar = new ListarClientes();
 
@@ -47,11 +42,27 @@ namespace WPFView
         }
 
 
-        private void btnExcluirPecas_Click(object sender, RoutedEventArgs e)
+        private void btnHd_Click(object sender, RoutedEventArgs e)
         {
             ListaExcluir excluir = new ListaExcluir();
 
             excluir.ShowDialog();
+
+        }
+
+        private void btnFonte_Click(object sender, RoutedEventArgs e)
+        {
+            PlacaCadastro pla = new PlacaCadastro();
+            pla.Show();
+
+
+        }
+
+        private void btnMemoria_Click(object sender, RoutedEventArgs e)
+        {
+            PlacaCadastro pla = new PlacaCadastro();
+            pla.Show();
+
 
         }
     }

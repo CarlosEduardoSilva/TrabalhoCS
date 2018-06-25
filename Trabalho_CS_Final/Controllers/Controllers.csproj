@@ -51,6 +51,11 @@
     <Compile Include="BaseManager.cs" />
     <Compile Include="ClienteController.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="FonteController.cs" />
+    <Compile Include="HDController.cs" />
+    <Compile Include="MemoriaController.cs" />
+    <Compile Include="PlacaMaeController.cs" />
+    <Compile Include="ProcessadorController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

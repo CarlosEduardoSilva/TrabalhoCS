@@ -15,6 +15,11 @@ namespace Controllers.DAL
 
         }
         public virtual DbSet<Cliente> Clientes { get; set; }
-        
+        public virtual DbSet<Processador> Processador { get; set; }
+        public virtual DbSet<HD> HD { get; set; }
+        public virtual DbSet<Memoria> Memoria { get; set; }
+        public virtual DbSet<PlacaMae> PlacaMae { get; set; }
+        public virtual DbSet<Fonte> Fonte { get; set; }
+
     }
 }

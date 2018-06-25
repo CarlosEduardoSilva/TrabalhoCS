@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    interface BaseManager<T> where T : class
+    public interface BaseManager<T> where T : class
     {
         void Salvar(T entidade);
         void Atualizar(T entidade);

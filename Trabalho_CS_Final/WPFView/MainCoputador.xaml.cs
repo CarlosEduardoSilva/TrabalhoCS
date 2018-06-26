@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,10 +20,25 @@ namespace WPFView
     /// Lógica interna para MainCoputador.xaml
     /// </summary>
     public partial class MainCoputador : Window
+        
+
     {
+
+        Computador pc = new Computador();
         public MainCoputador()
         {
             InitializeComponent();
+        }
+
+        private void Listar_Loaded(object sender, RoutedEventArgs e)
+        {
+           
+
+        }
+
+        private void select_listar(object sender, SelectionChangedEventArgs e)
+        {
+           
         }
     }
 }

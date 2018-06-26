@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Computador.cs" />
     <Compile Include="Fonte.cs" />
     <Compile Include="HD.cs" />
     <Compile Include="Memoria.cs" />

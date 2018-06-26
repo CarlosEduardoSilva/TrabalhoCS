@@ -38,6 +38,13 @@ namespace WPFView
             DataGrid dg = ((DataGrid)sender);
 
             HD hd = (HD)dg.Items[dg.SelectedIndex];
+
+            EditarHd edit= new EditarHd(hd);
+
+
+            edit.Show();
+
+            this.Close();
         }
     }
 }

@@ -39,8 +39,13 @@ namespace WPFView
             DataGrid dg = ((DataGrid)sender);
 
             Processador proc = (Processador)dg.Items[dg.SelectedIndex];
-            
 
+            EditarProcessador edit = new EditarProcessador(proc);
+
+
+            edit.Show();
+
+            this.Close();
         }
     }
 }

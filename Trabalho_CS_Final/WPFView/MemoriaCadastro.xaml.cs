@@ -52,5 +52,9 @@ namespace WPFView
 
         }
 
+        private void txtNome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

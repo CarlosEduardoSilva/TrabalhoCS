@@ -38,6 +38,13 @@ namespace WPFView
             DataGrid dg = ((DataGrid)sender);
 
             PlacaMae placa = (PlacaMae)dg.Items[dg.SelectedIndex];
+
+            EditarPlacaMae edit = new EditarPlacaMae(placa);
+
+
+            edit.Show();
+
+            this.Close();
         }
     }
 }

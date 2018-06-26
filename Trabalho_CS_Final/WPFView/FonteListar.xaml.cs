@@ -40,6 +40,13 @@ namespace WPFView
 
             Fonte fon = (Fonte)dg.Items[dg.SelectedIndex];
 
+            EditarFonte edit = new EditarFonte(fon);
+
+
+            edit.Show();
+
+            this.Close();
+
 
         }
     }

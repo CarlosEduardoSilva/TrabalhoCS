@@ -70,6 +70,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EditarFonte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditarHd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditarMemoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditarPlacaMae.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditarProcessador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Excluir.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -119,6 +139,21 @@
     </Compile>
     <Compile Include="Editar.xaml.cs">
       <DependentUpon>Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarFonte.xaml.cs">
+      <DependentUpon>EditarFonte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarHd.xaml.cs">
+      <DependentUpon>EditarHd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarMemoria.xaml.cs">
+      <DependentUpon>EditarMemoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarPlacaMae.xaml.cs">
+      <DependentUpon>EditarPlacaMae.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProcessador.xaml.cs">
+      <DependentUpon>EditarProcessador.xaml</DependentUpon>
     </Compile>
     <Compile Include="Excluir.xaml.cs">
       <DependentUpon>Excluir.xaml</DependentUpon>

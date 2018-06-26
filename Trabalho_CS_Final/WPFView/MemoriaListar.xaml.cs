@@ -38,9 +38,14 @@ namespace WPFView
         {
             DataGrid dg = ((DataGrid)sender);
 
-            Memoria fon = (Memoria)dg.Items[dg.SelectedIndex];
+            Memoria mem = (Memoria)dg.Items[dg.SelectedIndex];
+
+            EditarMemoria edit = new EditarMemoria(mem);
 
 
+            edit.Show();
+
+            this.Close();
         }
     }
 }

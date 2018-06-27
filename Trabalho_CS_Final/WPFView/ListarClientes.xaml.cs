@@ -23,14 +23,13 @@ namespace WPFView
             InitializeComponent();
         }
 
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void EditarClienteLoaded(object sender, RoutedEventArgs e)
         {
-
             ClienteController clienteController = new ClienteController();
             dgClientes.ItemsSource = clienteController.BuscarTodos();
-
         }
+
+
 
         public void dgClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -49,7 +48,7 @@ namespace WPFView
 
         }
 
-        
+       
     }
 
 

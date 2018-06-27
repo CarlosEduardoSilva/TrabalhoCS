@@ -31,8 +31,8 @@
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
                 <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnPrincipal" />
                 <Button Uid="1"  x:Name="btnCadastroCliente" Width="150" Content="CADASTRAR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FFA2A2A2" />
-                <Button Uid="2"  Name="btn"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnListarClientes_Click" />
-                <Button Uid="3"  Name="btnExcluirCliente"  Width="171" Content="COMPUTADORES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click" />
+                <Button Uid="2"  Name="btnPecas"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2"/>
+                <Button Uid="3"  Name="btnComputadores"  Width="171" Content="COMPUTADORES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
                 <Button Uid="4"  Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click"/>
 
             </StackPanel>

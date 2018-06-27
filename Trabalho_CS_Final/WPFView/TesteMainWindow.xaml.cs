@@ -42,21 +42,26 @@ namespace WPFView
                 case 1 :
                     GridMain.Background = Brushes.Beige;
 
-                    Cadastrar clientes = new Cadastrar();
+                    MainWindow clientes = new MainWindow();
                     clientes.Show();
                     
                     break;
                 case 2:
                     GridMain.Background = Brushes.CadetBlue;
+                    MainPeca pecas = new MainPeca();
+                    pecas.Show();
 
                     break;
                 case 3:
                     GridMain.Background = Brushes.DarkBlue;
+                    MainCoputador computadores = new MainCoputador();
+                    computadores.Show();
 
                     break;
                 case 4:
                     GridMain.Background = Brushes.Firebrick;
-
+                    
+                    
                     break;
                 case 5:
                     GridMain.Background = Brushes.Gainsboro;

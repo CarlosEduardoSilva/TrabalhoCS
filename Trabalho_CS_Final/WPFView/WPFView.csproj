@@ -68,8 +68,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TesteMainWindow.xaml.cs">
-      <DependentUpon>TesteMainWindow.xaml</DependentUpon>
+    <Compile Include="Principal.xaml.cs">
+      <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
     <Page Include="Cadastrar.xaml">
       <SubType>Designer</SubType>
@@ -211,10 +211,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Principal.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ProcessadorCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -223,7 +219,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TesteMainWindow.xaml">
+    <Page Include="Principal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -240,9 +236,6 @@
     </Compile>
     <Compile Include="PlacaListar.xaml.cs">
       <DependentUpon>PlacaListar.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Principal.xaml.cs">
-      <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProcessadorCadastro.xaml.cs">
       <DependentUpon>ProcessadorCadastro.xaml</DependentUpon>

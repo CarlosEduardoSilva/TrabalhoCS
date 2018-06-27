@@ -40,7 +40,10 @@ namespace WPFView
                 ClienteController clienteController = new ClienteController();
                 clienteController.Salvar(cliente);
 
+                
                 MessageBox.Show("Usuario salvo com exito!");
+                CadastroCliente main = new CadastroCliente();
+                main.Close();
             }
             catch (Exception ex)
             {

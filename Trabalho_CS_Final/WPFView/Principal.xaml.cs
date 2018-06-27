@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace WPFView
 {
     /// <summary>
-    /// Lógica interna para Principal.xaml
+    /// Lógica interna para TesteMainWindow.xaml
     /// </summary>
     public partial class Principal : Window
     {
@@ -24,39 +24,57 @@ namespace WPFView
             InitializeComponent();
         }
 
-        
-        private void Btn_Cadastro_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Principal pri = new Principal();
-            MainWindow cad = new MainWindow();
+            int index = int.Parse(((Button)e.Source).Uid)  ;
 
-            cad.ShowDialog();
-            pri.Close();
+            GridCursor.Margin = new Thickness(10 + (150 * index), 0, 0, 0);
 
-        }
+            switch (index)
+            {
+                case 0:
+                    GridMain.Background = Brushes.Aquamarine;
+                    ListarClientes listarCl = new ListarClientes();
 
-        private void Btn_Pecas_Click(object sender, RoutedEventArgs e)
-        {
-            MainPeca pec = new MainPeca();
+                    listarCl.Show();
 
-            pec.ShowDialog();
+                    break;
+                case 1 :
+                    GridMain.Background = Brushes.Beige;
 
+                    CadastroCliente clientes = new CadastroCliente();
+                    clientes.Show();
+                    
+                    break;
+                case 2:
+                    GridMain.Background = Brushes.CadetBlue;
+                    MainPeca pecas = new MainPeca();
+                    pecas.Show();
 
-        }
+                    break;
+                case 3:
+                    GridMain.Background = Brushes.DarkBlue;
+                    MainCoputador computadores = new MainCoputador();
+                    computadores.Show();
 
-        private void Btn_Computador_Click(object sender, RoutedEventArgs e)
-        {
-            MainCoputador com = new MainCoputador();
+                    break;
+                case 4:
+                    GridMain.Background = Brushes.Firebrick;
+                    
+                    
+                    break;
+                case 5:
+                    GridMain.Background = Brushes.Gainsboro;
 
-            com.ShowDialog();
+                    break;
+                case 6:
+                    GridMain.Background = Brushes.HotPink;
 
-        }
+                    break;
+                default:
+                    break;
+            }
 
-        private void Teste_click(object sender, RoutedEventArgs e)
-        {
-            TesteMainWindow teste = new TesteMainWindow();
-
-            teste.Show();
         }
     }
 }

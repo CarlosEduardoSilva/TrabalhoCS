@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,16 +20,16 @@ namespace WPFView
     /// <summary>
     /// Interação lógica para MainWindow.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CadastroCliente : Window
     {
-        public MainWindow()
+        public CadastroCliente()
         {
             InitializeComponent();
         }
 
         private void btnCadastrarClientes_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
+            CadastroCliente main = new CadastroCliente();
             Cadastrar cadastro = new Cadastrar();
             main.Close();
             //cadastro.Show();
@@ -56,10 +58,27 @@ namespace WPFView
 
         }
 
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Cliente cliente = new Cliente();
 
+                cliente.Nome = txtNome.Text;
+                cliente.Login = txtLogin.Text;
+                cliente.Email = txtEmail.Text;
+                cliente.Senha = txtSenha.Text;
 
+                ClienteController clienteController = new ClienteController();
+                clienteController.Salvar(cliente);
 
+                MessageBox.Show("Usuario salvo com exito!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar o usuário (" + ex.Message + ")");
 
-
+            }
+        }
     }
 }

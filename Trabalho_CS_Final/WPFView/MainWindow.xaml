@@ -1,16 +1,115 @@
-﻿<Window x:Class="WPFView.MainWindow"
+﻿<Window x:Class="WPFView.CadastroCliente"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="448" Width="800">
-    <Grid Margin="0,208,479,0">
-        <Button Name="btnCadastroCliente" Content="Cadastrar" BorderBrush="Aqua"   Margin="449,-111,-265,270" Click="btnCadastrarClientes_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3" Padding="1,-1,1,1" Grid.ColumnSpan="6"/>
-        <Button Name="btnListarClientes" Content="Listar / Editar" Click="btnListarClientes_Click" Margin="448,-56,-265,215" Background="#FF2DA5D3" FontSize="16" />
-        <Button Name="btnExcluirCliente" Content="Excluir" Margin="448,-1,-265,160" Click="btnExcluirCliente_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button x:Name="btnExcluirCliente_Copy" Content="Excluir" Margin="448,-1,-265,160" Click="btnExcluirCliente_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
+        Height="600" Width="1080">
+    <StackPanel Background="WhiteSmoke">
 
-    </Grid>
+
+        <Grid Height="40">
+            <StackPanel HorizontalAlignment="Left" Margin="20 0">
+                <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="EN"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Button Content="FAQ"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="CONTACT"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="ORDER STATUS"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="MY ACCOUNT"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Power"   Foreground="#FFA2A2A2" Width="25" Height="25"/>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+        <Grid Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2"  />
+                <Button Uid="1"  x:Name="btnCadastroCliente" Width="150" Content="CADASTRAR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="2"  Name="btnListarClientes"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnListarClientes_Click" />
+                <Button Uid="3"  Name="btnExcluirCliente"  Width="171" Content="COMPUTADORES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click" />
+                <Button Uid="4"  Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click"/>
+
+            </StackPanel>
+            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>
+
+        </Grid>
+        <Grid x:Name="GridMain" Height="460" Background="Aquamarine">
+
+            <Grid Background="#FF12D8BD" Width="520"        Margin="8,10,544,43">
+                <Label Uid="6" Content="CADASTRAR CLIENTES" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="195,10,155,367" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Button x:Name="btnCadastrar" Uid="6" Content="CADASTRAR" Height="Auto" Foreground="#FF382020"  Margin="312,330,74,37" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnSalvar_Click"/>
+               
+                <Label Uid="6" Content="NOME" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,92,314,285" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="E-MAIL" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,161,314,216" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="LOGIN" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,128,314,249" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="SENHA" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,194,314,183" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="30" Margin="232,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#89484285" Background="#FFB2D1D0" CaretBrush="#FF9EB7CB" Foreground="#FF272121" SelectionBrush="#FF2F3E49" FontFamily="Gadugi" FontSize="14"/>
+                <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="30" Margin="232,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#890A0632" Background="#FFB2D1D0" CaretBrush="#FF2A6493" Foreground="#FF272121" SelectionBrush="#FF2E3C47" FontFamily="Gadugi" FontSize="14"/>
+                <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="30" Margin="232,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#890A0632" Background="#FFB2D1D0" CaretBrush="#FF2A6493" Foreground="#FF272121" SelectionBrush="#FF2E3C47" FontFamily="Gadugi" FontSize="14"/>
+                <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="30" Margin="232,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#890A0632" Background="#FFB2D1D0" CaretBrush="#FF2A6493" Foreground="#FF272121" SelectionBrush="#FF2E3C47" FontFamily="Gadugi" FontSize="14"/>
+
+
+
+
+
+            </Grid>
+            <Grid Background="#FF12D8BD" Width="520"        Margin="545,10,7,43" />
+
+
+
+
+
+        </Grid>
+    </StackPanel>
 </Window>

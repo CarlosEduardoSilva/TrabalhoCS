@@ -75,7 +75,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Editar.xaml">
+    <Page Include="EditarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,8 +146,8 @@
     <Compile Include="Cadastrar.xaml.cs">
       <DependentUpon>Cadastrar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Editar.xaml.cs">
-      <DependentUpon>Editar.xaml</DependentUpon>
+    <Compile Include="EditarCliente.xaml.cs">
+      <DependentUpon>EditarCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="EditarFonte.xaml.cs">
       <DependentUpon>EditarFonte.xaml</DependentUpon>

@@ -19,11 +19,11 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para Editar.xaml
     /// </summary>
-    public partial class Editar : Window
+    public partial class EditarCliente : Window
     {
         private Cliente _cli;
 
-        public Editar(Cliente cli)
+        public EditarCliente(Cliente cli)
         {
             InitializeComponent();
             _cli = cli;
@@ -63,6 +63,8 @@ namespace WPFView
 
 
         }
+
+        
     }
 
 

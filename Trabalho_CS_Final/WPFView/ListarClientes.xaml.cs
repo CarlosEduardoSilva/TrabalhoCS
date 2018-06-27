@@ -36,8 +36,8 @@ namespace WPFView
             DataGrid dg = ((DataGrid)sender);
 
             Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
-                        
-            Editar editar = new Editar(cli);
+
+            EditarCliente editar = new EditarCliente(cli);
 
            
             editar.Show();

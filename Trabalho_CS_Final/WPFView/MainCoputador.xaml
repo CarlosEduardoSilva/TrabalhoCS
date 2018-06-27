@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainCoputador" Height="450" Width="800">
     <Grid>
-        <Label Content="Monte seu computador" HorizontalAlignment="Left" Margin="87,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Monte seu computador" HorizontalAlignment="Left" Margin="87,10,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
 
 
         <StackPanel Margin="324,67,180,319">
-            <ComboBox Height="21">
+            <ComboBox Height="28">
                 <ComboBoxItem Content="Item # 1 da ComboBox"/>
                 <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
                 <ComboBoxItem Content="ComboBox Item # 3"/>
@@ -19,7 +19,7 @@
         </StackPanel>
 
         <StackPanel Margin="324,99,180,287">
-            <ComboBox Height="21">
+            <ComboBox Height="29">
                 <ComboBoxItem Content="Item # 1 da ComboBox"/>
                 <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
                 <ComboBoxItem Content="ComboBox Item # 3"/>
@@ -35,7 +35,7 @@
         </StackPanel>
         
         <StackPanel Margin="324,166,180,212">
-            <ComboBox Height="21">
+            <ComboBox Height="30">
                 <ComboBoxItem Content="Item # 1 da ComboBox"/>
                 <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
                 <ComboBoxItem Content="ComboBox Item # 3"/>
@@ -43,7 +43,7 @@
         </StackPanel>
 
         <StackPanel Margin="324,205,180,168">
-            <ComboBox Height="21">
+            <ComboBox Height="35">
                 <ComboBoxItem Content="Item # 1 da ComboBox"/>
                 <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
                 <ComboBoxItem Content="ComboBox Item # 3"/>
@@ -52,12 +52,12 @@
 
 
 
-        <Label Content="Placa Mãe" HorizontalAlignment="Left" Margin="87,59,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Memoria RAM" HorizontalAlignment="Left" Margin="87,158,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Fonte" HorizontalAlignment="Left" Margin="87,197,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Placa Mãe" HorizontalAlignment="Left" Margin="87,59,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
+        <Label Content="Memoria RAM" HorizontalAlignment="Left" Margin="87,161,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
+        <Label Content="Fonte" HorizontalAlignment="Left" Margin="87,197,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
 
 
-        <Label Content="HD" HorizontalAlignment="Left" Margin="87,125,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Processador" HorizontalAlignment="Left" Margin="87,91,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="HD" HorizontalAlignment="Left" Margin="87,125,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
+        <Label Content="Processador" HorizontalAlignment="Left" Margin="87,101,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
     </Grid>
 </Window>

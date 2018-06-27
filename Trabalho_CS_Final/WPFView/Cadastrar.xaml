@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="Cadastrar" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="526,191,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
-        <Button x:Name="btnCancelarClick" Content="Cancelar&#xA;" HorizontalAlignment="Left" Margin="638,191,0,0" VerticalAlignment="Top" Width="76" Click="btn_CancelarClick"/>
-        <Label Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="129,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="129,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567"/>
-        <Label Content="E-mail&#xA;" HorizontalAlignment="Left" Margin="129,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <Label Content="Senha&#xA;" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="253,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="253,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="253,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="253,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        
+        <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="500,195,0,0" VerticalAlignment="Top" Width="106" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelarClick" Content="Cancelar&#xA;" HorizontalAlignment="Left" Margin="624,195,0,0" VerticalAlignment="Top" Width="86" Click="btn_CancelarClick"/>
+        <Label Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="129,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Background="#FF16A2CB"/>
+        <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="129,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567" Background="#FF16A2CB"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="129,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Background="#FF16A2CB"/>
+        <Label Content="Senha&#xA;" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Background="#FF16A2CB"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="253,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF21E018" />
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="253,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF21E018" />
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="253,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF21E018" />
+        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="253,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF21E018" />
+
     </Grid>
 </Window>

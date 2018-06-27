@@ -12,7 +12,7 @@
             <StackPanel HorizontalAlignment="Left" Margin="20 0">
                 <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
                     <ComboBoxItem Content="EN"/>
-                </ComboBox>                
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
                 <Button Content="FAQ"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
@@ -25,26 +25,23 @@
                 </Button>
 
             </StackPanel>
-        </Grid>       
+        </Grid>
         <Grid Height="100">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
                 <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
-                <Button Uid="1"  Width="150" Content="SHOP" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
-                <Button Uid="2"  Width="150" Content="BLOG" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
-                <Button Uid="3"  Width="150" Content="PAGES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
+                <Button Uid="1"  Width="150" Content="Cadastrar Clientes" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
+                <Button Uid="2"  Width="150" Content="Cadastrar Peças" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
+                <Button Uid="3"  Width="171" Content="Cadatrar Computador" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
                 <Button Uid="4"  Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
                 <Button Uid="5"  Width="150" Content="BRANDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
-                <Button Uid="6"  Width="150" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
+                <Button Uid="6"  Width="141" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Button_Click"/>
 
             </StackPanel>
             <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>
 
         </Grid>
-
-        <Grid x:Name="GridMain" Height="460" Background="Aquamarine">
-            
-            
-        </Grid>
+        <Grid x:Name="GridMain" Height="460" Background="Aquamarine"/>
         
+
     </StackPanel>
 </Window>

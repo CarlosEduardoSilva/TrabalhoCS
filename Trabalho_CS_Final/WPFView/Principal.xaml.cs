@@ -51,5 +51,12 @@ namespace WPFView
             com.ShowDialog();
 
         }
+
+        private void Teste_click(object sender, RoutedEventArgs e)
+        {
+            TesteMainWindow teste = new TesteMainWindow();
+
+            teste.Show();
+        }
     }
 }

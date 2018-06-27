@@ -13,14 +13,14 @@
         <Grid Height="40">
             <StackPanel HorizontalAlignment="Left" Margin="20 0">
                 <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
-                    <ComboBoxItem Content="EN"/>
+                    <ComboBoxItem Content="PT"/>
                 </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
-                <Button Content="FAQ"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
-                <Button Content="CONTACT"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
-                <Button Content="ORDER STATUS"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
-                <Button Content="MY ACCOUNT"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="OLÁ"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="CONTATO"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="ESTATUS"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="MINHA CONTA"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
                 <Button Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
                     <materialDesign:PackIcon Kind="Power"   Foreground="#FFA2A2A2" Width="25" Height="25"/>
                 </Button>
@@ -29,9 +29,9 @@
         </Grid>
         <Grid Height="100">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
-                <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2"  />
-                <Button Uid="1"  x:Name="btnCadastroCliente" Width="150" Content="CADASTRAR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
-                <Button Uid="2"  Name="btnListarClientes"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnListarClientes_Click" />
+                <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnPrincipal" />
+                <Button Uid="1"  x:Name="btnCadastroCliente" Width="150" Content="CADASTRAR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FFA2A2A2" />
+                <Button Uid="2"  Name="btn"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnListarClientes_Click" />
                 <Button Uid="3"  Name="btnExcluirCliente"  Width="171" Content="COMPUTADORES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click" />
                 <Button Uid="4"  Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="btnExcluirCliente_Click"/>
 
@@ -104,7 +104,15 @@
 
 
             </Grid>
-            <Grid Background="#FF12D8BD" Width="520"        Margin="545,10,7,43" />
+            <Grid Background="#FF12D8BD" Width="520"        Margin="545,10,7,43" >
+
+
+                <Button x:Name="btnListarClientes" Uid="6" Content="LISTAR" Height="Auto" Foreground="#FF382020"  Margin="96,90,290,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnListarClientes_Click"/>
+                <Button x:Name="btnEditar" Uid="6" Content="EDITAR" Height="Auto" Foreground="#FF382020"  Margin="276,90,110,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnExcluirCliente_Click"/>
+
+
+            </Grid>
+            
 
 
 

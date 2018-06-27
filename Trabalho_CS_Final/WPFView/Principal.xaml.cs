@@ -44,7 +44,10 @@ namespace WPFView
 
                     CadastroCliente clientes = new CadastroCliente();
                     clientes.Show();
-                    
+
+                    Principal teste = new Principal();
+                    this.Close();
+
                     break;
                 case 2:
                     GridMain.Background = Brushes.CadetBlue;
@@ -74,6 +77,14 @@ namespace WPFView
                 default:
                     break;
             }
+
+        }
+
+        
+        private void teste(object sender, RoutedEventArgs e)
+        {
+            Principal teste = new Principal();
+            this.Close();
 
         }
     }

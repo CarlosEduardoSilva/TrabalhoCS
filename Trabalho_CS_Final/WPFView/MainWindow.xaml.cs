@@ -79,6 +79,13 @@ namespace WPFView
                 MessageBox.Show("Erro ao salvar o usuário (" + ex.Message + ")");
 
             }
+           
+        }
+
+        private void btnPrincipal(object sender, RoutedEventArgs e)
+        {
+            Principal principal = new Principal();
+            principal.Show();
         }
     }
 }

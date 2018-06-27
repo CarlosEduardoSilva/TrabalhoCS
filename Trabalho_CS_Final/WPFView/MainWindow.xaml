@@ -106,10 +106,9 @@
             </Grid>
             <Grid Background="#FF12D8BD" Width="520"        Margin="545,10,7,43" >
 
-
-                <Button x:Name="btnListarClientes" Uid="6" Content="LISTAR" Height="Auto" Foreground="#FF382020"  Margin="96,90,290,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnListarClientes_Click"/>
-                <Button x:Name="btnEditar" Uid="6" Content="EDITAR" Height="Auto" Foreground="#FF382020"  Margin="276,90,110,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnExcluirCliente_Click"/>
-
+                
+                <Button x:Name="btnEditarClientes" Uid="6" Content="EDITAR" Height="Auto" Foreground="#FF382020"  Margin="96,90,290,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnEditarClientes_Click"/>
+                <Button x:Name="btnEditar" Uid="6" Content="LISTAR" Height="Auto" Foreground="#FF382020"  Margin="276,90,110,277" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnExcluirCliente_Click"/>
 
             </Grid>
             

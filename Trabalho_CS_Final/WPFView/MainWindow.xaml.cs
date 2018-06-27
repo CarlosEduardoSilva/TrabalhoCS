@@ -87,5 +87,13 @@ namespace WPFView
             Principal principal = new Principal();
             principal.Show();
         }
+
+        private void btnEditarClientes_Click(object sender, RoutedEventArgs e)
+        {
+            ListarClientes listar = new ListarClientes();
+
+            listar.ShowDialog();
+
+        }
     }
 }

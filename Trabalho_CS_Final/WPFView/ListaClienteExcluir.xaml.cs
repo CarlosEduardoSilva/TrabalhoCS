@@ -19,9 +19,9 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para ListaExcluir.xaml
     /// </summary>
-    public partial class ListaExcluir : Window
+    public partial class ListaClienteExcluir : Window
     {
-        public ListaExcluir()
+        public ListaClienteExcluir()
         {
             InitializeComponent();
 
@@ -40,7 +40,7 @@ namespace WPFView
 
             Cliente cli = (Cliente)dg.Items[dg.SelectedIndex];
 
-            Excluir excluir = new Excluir(cli);
+            ExcluirCliente excluir = new ExcluirCliente(cli);
 
 
             excluir.Show();

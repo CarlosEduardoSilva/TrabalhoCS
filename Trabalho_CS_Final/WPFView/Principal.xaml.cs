@@ -46,7 +46,7 @@ namespace WPFView
                     clientes.Show();
 
                     Principal teste = new Principal();
-                    this.Close();
+                    
 
                     break;
                 case 2:

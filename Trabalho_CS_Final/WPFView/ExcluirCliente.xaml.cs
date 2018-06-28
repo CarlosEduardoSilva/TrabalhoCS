@@ -19,15 +19,12 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para Excluir.xaml
     /// </summary>
-    public partial class Excluir : Window
+    public partial class ExcluirCliente : Window
     {
         private Cliente _cli;
 
-        public Excluir()
-        {
-        }
 
-        public Excluir(Cliente cli)
+        public ExcluirCliente(Cliente cli)
         {
             _cli = cli;
             InitializeComponent();
@@ -44,6 +41,14 @@ namespace WPFView
             MessageBox.Show("Usuario excluido com exito!");
 
             this.Close();
+
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            ListaClienteExcluir lista = new ListaClienteExcluir();
+            lista.ShowDialog();
 
         }
     }

@@ -61,6 +61,9 @@ namespace WPFView
 
             this.Close();
 
+            ListarClientes reabrir = new ListarClientes();
+            reabrir.Show();
+
 
         }
 

@@ -99,7 +99,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Excluir.xaml">
+    <Page Include="ExcluirCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,7 +119,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListaExcluir.xaml">
+    <Page Include="ListaClienteExcluir.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,8 +164,8 @@
     <Compile Include="EditarProcessador.xaml.cs">
       <DependentUpon>EditarProcessador.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Excluir.xaml.cs">
-      <DependentUpon>Excluir.xaml</DependentUpon>
+    <Compile Include="ExcluirCliente.xaml.cs">
+      <DependentUpon>ExcluirCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="FonteCadastro.xaml.cs">
       <DependentUpon>FonteCadastro.xaml</DependentUpon>
@@ -179,8 +179,8 @@
     <Compile Include="HDListar.xaml.cs">
       <DependentUpon>HDListar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListaExcluir.xaml.cs">
-      <DependentUpon>ListaExcluir.xaml</DependentUpon>
+    <Compile Include="ListaClienteExcluir.xaml.cs">
+      <DependentUpon>ListaClienteExcluir.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarClientes.xaml.cs">
       <DependentUpon>ListarClientes.xaml</DependentUpon>

@@ -52,7 +52,7 @@ namespace WPFView
 
         private void btnExcluirCliente_Click(object sender, RoutedEventArgs e)
         {
-            ListaExcluir excluir = new ListaExcluir();
+            ListaClienteExcluir excluir = new ListaClienteExcluir();
 
             excluir.ShowDialog();
 
@@ -73,6 +73,10 @@ namespace WPFView
                 clienteController.Salvar(cliente);
 
                 MessageBox.Show("Usuario salvo com exito!");
+
+                this.Close();
+                
+
             }
             catch (Exception ex)
             {

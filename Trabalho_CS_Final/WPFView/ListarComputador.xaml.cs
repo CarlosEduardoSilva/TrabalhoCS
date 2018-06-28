@@ -37,10 +37,7 @@ namespace WPFView
         private void Selection_Computador(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = ((DataGrid)sender);
-
             Computador cli = (Computador)dg.Items[dg.SelectedIndex];
-
-            
 
         }
     }

@@ -97,8 +97,8 @@
                         </TransformGroup>
                     </Label.RenderTransform>
                 </Label>
-                <ComboBox x:Name="ComboBoxPlacaMae" ItemsSource="{Binding Path=placaMae}" DisplayMemberPath="Nome"
-                    SelectedValuePath="Nome"  HorizontalAlignment="Left" Margin="259,95,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
+                <ComboBox x:Name="ComboBoxPlacaMae" ItemsSource="{Binding placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_PlacaMae"  HorizontalAlignment="Left" Margin="259,95,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
                
                 <ComboBox x:Name="ComboBoxProcessador" ItemsSource="{Binding processador}" DisplayMemberPath="Nome"
                     SelectedValuePath="ID_Processador"  HorizontalAlignment="Left" Margin="259,128,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>

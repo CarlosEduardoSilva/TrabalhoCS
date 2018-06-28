@@ -71,6 +71,18 @@
     <Compile Include="Migrations\201806281407272_Initial1.Designer.cs">
       <DependentUpon>201806281407272_Initial1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806281606293_Initial2.cs" />
+    <Compile Include="Migrations\201806281606293_Initial2.Designer.cs">
+      <DependentUpon>201806281606293_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806281613453_Initial3.cs" />
+    <Compile Include="Migrations\201806281613453_Initial3.Designer.cs">
+      <DependentUpon>201806281613453_Initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806281616507_Initial4.cs" />
+    <Compile Include="Migrations\201806281616507_Initial4.Designer.cs">
+      <DependentUpon>201806281616507_Initial4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlacaMaeController.cs" />
     <Compile Include="ProcessadorController.cs" />
@@ -98,6 +110,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806281407272_Initial1.resx">
       <DependentUpon>201806281407272_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806281606293_Initial2.resx">
+      <DependentUpon>201806281606293_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806281613453_Initial3.resx">
+      <DependentUpon>201806281613453_Initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806281616507_Initial4.resx">
+      <DependentUpon>201806281616507_Initial4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,7 +29,7 @@ namespace Controllers
         public List<Computador> BuscarTodos()
         {
             //return contexto.Computador.Include("Processador").Include("Memoria").ToList();
-            return contexto.Computador.Include("Processador").Include("Memoria").ToList();
+            return contexto.Computador.ToList();
         }
 
         public void Excluir(int id)

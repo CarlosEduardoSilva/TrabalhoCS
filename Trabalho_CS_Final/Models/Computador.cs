@@ -14,10 +14,10 @@ namespace Models
         public int ID_Computador{ get; set; }
 
         public int HDID { get; set; }
-        public HD HD { get; set; }
+        public virtual HD HD { get; set; }
 
         public int ProcessadorID { get; set; }
-        public virtual Processador _Processador { get; set; }
+        public virtual Processador Processador { get; set; }
 
         public int PlacamaeID { get; set; }
         public virtual PlacaMae PlacaMae { get; set; }
@@ -26,7 +26,7 @@ namespace Models
         public virtual Fonte Fonte { get; set; }
 
         public int MemoriaID { get; set; }
-        public Memoria Memoria { get; set; }
+        public virtual Memoria Memoria { get; set; }
 
         public decimal ValorTotal { get; set; }
 

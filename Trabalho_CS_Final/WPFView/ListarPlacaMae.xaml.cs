@@ -19,21 +19,21 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para PlacaListar.xaml
     /// </summary>
-    public partial class PlacaListar : Window
+    public partial class ListarPlacaMae : Window
     {
-        public PlacaListar()
+        public ListarPlacaMae()
         {
             InitializeComponent();
         }
 
-        private void Listar_Loaded(object sender, RoutedEventArgs e)
+        private void EditarPlacaMaeLoaded(object sender, RoutedEventArgs e)
         {
             PlacaMaeController placaList = new PlacaMaeController();
             DgListPlaca.ItemsSource = placaList.BuscarTodos();
-
         }
 
-        private void select_listar(object sender, SelectionChangedEventArgs e)
+
+        private void select_listarPlacaMae(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = ((DataGrid)sender);
 
@@ -46,5 +46,7 @@ namespace WPFView
 
             this.Close();
         }
+
+        
     }
 }

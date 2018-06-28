@@ -5,20 +5,111 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFView"
         mc:Ignorable="d"
-        Title="MainPeca" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnCadastroPlacaMae" Content="Placa Mãe" BorderBrush="Aqua"   Margin="75,0,587,331" Click="btnPlaca_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3" Padding="1,-1,1,1"/>
-        <Button x:Name="btnCadastroProcessador" Content="Processador" Click="btnProcessador_Click" Margin="75,93,587,276" Background="#FF2DA5D3" FontSize="16" />
-        <Button x:Name="btnCadastroHd" Content="HD" Margin="75,0,587,221" Click="btnHd_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button x:Name="btnCadastroFonte" Content="Fonte" Margin="75,0,587,166" Click="btnFonte_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button x:Name="btnCadastroMemoria" Content="Memoria" Margin="75,0,587,111" Click="btnMemoria_Click" RenderTransformOrigin="-0.565,-0.01" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="130" IsDefault="True" FontSize="20" Background="#FF2DA5D3"/>
-        <Button x:Name="btnListarPlacaMae" Content="Placa Mãe" Click="btnPlacaListar_Click" Margin="520,36,142,333" Background="#FF2DA5D3" FontSize="16" />
-        <Label Content="Cadastrar" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Width="150" Height="48" FontSize="16"/>
-        <Label Content="Listar" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button x:Name="btnListarProcessador" Content="Processador" Click="btnProcessadorListar_Click" Margin="520,93,142,276" Background="#FF2DA5D3" FontSize="16" />
-        <Button x:Name="btnListarHd" Content="HD" Click="btnHdListar_Click" Margin="520,150,142,219" Background="#FF2DA5D3" FontSize="16" />
-        <Button x:Name="btnListarFonte" Content="Fonte" Click="btnFonteListar_Click" Margin="520,205,142,164" Background="#FF2DA5D3" FontSize="16" />
-        <Button x:Name="btnListarMemoria" Content="Memoria RAM" Click="btnMemoriaListar_Click" Margin="520,260,142,109" Background="#FF2DA5D3" FontSize="16" />
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        
+        Height="600" Width="1080">
+    <StackPanel Background="WhiteSmoke">
+        <Grid Height="40">
+            <StackPanel HorizontalAlignment="Left" Margin="20 0">
+                <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="PT"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Button Content="OLÁ"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="CONTATO"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="ESTATUS"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Content="MINHA CONTA"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Power"   Foreground="#FFA2A2A2" Width="25" Height="25"/>
+                </Button>
 
-    </Grid>
+            </StackPanel>
+        </Grid>
+        <Grid Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2"/>
+                <Button Uid="1"  Width="150" Content="CLIENTES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="2"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="3"  Width="171" Content="COMPUTADORES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="4"  Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="5"  Width="150" Content="BRANDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="6"  Width="141" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+
+            </StackPanel>
+            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>
+
+        </Grid>
+
+
+        <Grid x:Name="GridMain" Height="460" Background="Aquamarine">
+
+            <Grid Background="#FF12D8BD" Width="520"        Margin="545,10,7,43">
+                <Label Uid="6" Content="CADASTRAR PRODUTOS" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="195,10,130,367" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+
+                <Label Uid="6" Content="PRODUTO" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,92,314,285" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="CARACTERISTICAS" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,161,314,216" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="VALOR" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,128,314,249" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="30" Margin="232,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#89484285" Background="#FFB2D1D0" CaretBrush="#FF9EB7CB" Foreground="#FF272121" SelectionBrush="#FF2F3E49" FontFamily="Gadugi" FontSize="14"/>
+                <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="30" Margin="232,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#890A0632" Background="#FFB2D1D0" CaretBrush="#FF2A6493" Foreground="#FF272121" SelectionBrush="#FF2E3C47" FontFamily="Gadugi" FontSize="14"/>
+                <TextBox x:Name="txtCarac" HorizontalAlignment="Left" Height="30" Margin="232,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" BorderBrush="#890A0632" Background="#FFB2D1D0" CaretBrush="#FF2A6493" Foreground="#FF272121" SelectionBrush="#FF2E3C47" FontFamily="Gadugi" FontSize="14"/>
+
+            </Grid>
+
+            <Grid Background="#FF12D8BD" Width="520"        Margin="10,10,542,43" >
+
+                <Button x:Name="btnCadPlacaMae" Uid="6" Content="PLACA MAE" Height="Auto" Foreground="#FF382020"  Margin="73,30,313,337" BorderBrush="#FF4A99D8" Background="#FF2196F3"  Click="BtnCadMae_Click"/>
+                <Button x:Name="btnCadProc" Uid="6" Content="PROCESSADOR" Height="Auto" Foreground="#FF382020"  Margin="73,110,313,257" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnCadPro_Click"/>
+                <Button x:Name="btnCadHd" Uid="6" Content="HD" Height="Auto" Foreground="#FF382020"  Margin="73,190,313,177" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnCadHd_Click"/>
+                <Button x:Name="btnCadMem" Uid="6" Content="MEMORIA RAM" Height="Auto" Foreground="#FF382020"  Margin="73,270,313,97" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnCadMem_Click"/>
+                <Button x:Name="btnCadFon" Uid="6" Content="FONTE" Height="Auto" Foreground="#FF382020"  Margin="73,350,313,17" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnCadFon_Click" />
+
+                <Button x:Name="btnLisMae" Uid="6" Content="PLACA MAE" Height="Auto" Foreground="#FF382020"  Margin="314,30,72,337" BorderBrush="#FF4A99D8" Background="#FF2196F3"  Click="BtnLisMae_Click"/>
+                <Button x:Name="btnLisProc" Uid="6" Content="PROCESSADOR" Height="Auto" Foreground="#FF382020"  Margin="314,110,72,257" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnLisPro_Click"/>
+                <Button x:Name="btnLisHd" Uid="6" Content="HD" Height="Auto" Foreground="#FF382020"  Margin="314,190,72,177" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnLisHd_Click"/>
+                <Button x:Name="btnLisMem" Uid="6" Content="MEMORIA RAM" Height="Auto" Foreground="#FF382020"  Margin="314,270,72,97" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnLisMem_Click"/>
+                <Button x:Name="btnLisFon" Uid="6" Content="FONTE" Height="Auto" Foreground="#FF382020"  Margin="314,350,72,17" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="BtnLisFon_Click" />
+
+
+            </Grid>
+
+        </Grid>
+
+    </StackPanel>
 </Window>

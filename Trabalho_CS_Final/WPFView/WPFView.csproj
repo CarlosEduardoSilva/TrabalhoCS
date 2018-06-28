@@ -207,7 +207,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PlacaListar.xaml">
+    <Page Include="ListarPlacaMae.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -234,8 +234,8 @@
     <Compile Include="PlacaCadastro.xaml.cs">
       <DependentUpon>PlacaCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlacaListar.xaml.cs">
-      <DependentUpon>PlacaListar.xaml</DependentUpon>
+    <Compile Include="ListarPlacaMae.xaml.cs">
+      <DependentUpon>ListarPlacaMae.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProcessadorCadastro.xaml.cs">
       <DependentUpon>ProcessadorCadastro.xaml</DependentUpon>

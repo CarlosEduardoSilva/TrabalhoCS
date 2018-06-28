@@ -51,11 +51,12 @@ namespace WPFView
             try
             {
                 Computador pc = new Computador();
-                pc.PlacaMae = placaMaeController.Buscar(int.Parse(ComboBoxPlacaMae.SelectedValue.ToString()));
-                pc.Processador = processadorController.Buscar(int.Parse(ComboBoxProcessador.SelectedValue.ToString()));
-                pc.HD = hdController.Buscar(int.Parse(ComboBoxHd.SelectedValue.ToString()));
-                pc.Memoria = memoriaController.Buscar(int.Parse(ComboBoxMemoria.SelectedValue.ToString()));
-                pc.Fonte = fonteController.Buscar(int.Parse(ComboBoxMemoria.SelectedValue.ToString()));
+                pc.PlacamaeID = int.Parse(ComboBoxPlacaMae.SelectedValue.ToString());
+                pc.ProcessadorID = int.Parse(ComboBoxProcessador.SelectedValue.ToString());
+
+                pc.HDID = int.Parse(ComboBoxHd.SelectedValue.ToString());
+                pc.MemoriaID = int.Parse(ComboBoxMemoria.SelectedValue.ToString());
+                pc.FonteID = int.Parse(ComboBoxMemoria.SelectedValue.ToString());
 
 
                 ComputadorController montarPC = new ComputadorController();
@@ -72,6 +73,16 @@ namespace WPFView
                 MessageBox.Show("Erro ao salvar computador (" + ex.Message + ")");
 
             }
+
+
+        }
+
+        private void Listar_Computador(object sender, RoutedEventArgs e)
+        {
+
+            ListarComputador listarComputador = new ListarComputador();
+
+            listarComputador.Show();
 
 
         }

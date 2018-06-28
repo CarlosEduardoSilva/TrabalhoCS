@@ -27,7 +27,7 @@ namespace Controllers
 
         public List<PlacaMae> BuscarTodos()
         {
-            return contexto.PlacaMae.ToList();
+            Terreturn contexto.PlacaMae.ToList();
         }
 
         public void Excluir(int id)

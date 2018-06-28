@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201806281300589_Initial.Designer.cs">
       <DependentUpon>201806281300589_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806281407272_Initial1.cs" />
+    <Compile Include="Migrations\201806281407272_Initial1.Designer.cs">
+      <DependentUpon>201806281407272_Initial1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlacaMaeController.cs" />
     <Compile Include="ProcessadorController.cs" />
@@ -91,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806281300589_Initial.resx">
       <DependentUpon>201806281300589_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806281407272_Initial1.resx">
+      <DependentUpon>201806281407272_Initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

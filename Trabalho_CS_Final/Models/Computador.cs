@@ -13,10 +13,19 @@ namespace Models
         [Key]
         public int ID_Computador{ get; set; }
 
+        public int HDID { get; set; }
         public HD HD { get; set; }
-        public Processador Processador { get; set; }
+
+        public int ProcessadorID { get; set; }
+        public virtual Processador Processador { get; set; }
+
+        public int PlacamaeID { get; set; }
         public PlacaMae PlacaMae { get; set; }
+
+        public int FonteID { get; set; }
         public Fonte Fonte { get; set; }
+
+        public int MemoriaID { get; set; }
         public Memoria Memoria { get; set; }
 
         public decimal ValorTotal { get; set; }

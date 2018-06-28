@@ -19,8 +19,7 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para MainCoputador.xaml
     /// </summary>
-    public partial class MainCoputador : Window
-        
+    public partial class MainCoputador : Window        
 
     {
 
@@ -36,9 +35,10 @@ namespace WPFView
 
         }
 
-        private void select_listar(object sender, SelectionChangedEventArgs e)
+        
+        private void btnMontar_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
     }
 }

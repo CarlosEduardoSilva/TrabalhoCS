@@ -3,61 +3,106 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WPFView"
         mc:Ignorable="d"
-        Title="MainCoputador" Height="450" Width="800">
-    <Grid>
-        <Label Content="Monte seu computador" HorizontalAlignment="Left" Margin="87,10,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
+        Height="564" Width="520" >
+
+    <StackPanel Background="WhiteSmoke">
+        <Grid Height="40">
+            <StackPanel HorizontalAlignment="Left" Margin="20 0">
+                <ComboBox FontSize="15" Width="50" Foreground="#FFA2A2A2" SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="PT"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                <Button Content="MINHA CONTA"  Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" VerticalAlignment="Center" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Power"   Foreground="#FFA2A2A2" Width="25" Height="25"/>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+        <Grid Height="80">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                <Button Uid="0"  Width="191" Content="MONTAR COMPUTADOR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+
+            </StackPanel>
+            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>
+
+        </Grid>
+        <Grid Background="Aquamarine">
+            <Grid Background="#FF12D8BD"         Margin="10,10,10,43" Height="393">
+                <Label Uid="6" Content="ESCOLHA A CONFIGURAÇÃO" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="138,13,121,347" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Button x:Name="btnMontar" Uid="6" Content="MONTAR" Height="Auto" Foreground="#FF382020"  Margin="312,330,68,37" BorderBrush="#FF4A99D8" Background="#FF2196F3" Click="btnMontar_Click"/>
+
+                <Label Uid="6" Content="PLACA MÃE" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,92,314,271" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="HD" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,161,314,200" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="PROCESSADOR" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,128,314,234" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Uid="6" Content="MEMORIA RAM" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,194,314,167" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+
+                <Label Uid="6" Content="FONTE" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF423F3F" Margin="35,231,314,130" FontSize="16" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+               
 
 
-        <StackPanel Margin="324,67,180,319">
-            <ComboBox Height="28">
-                <ComboBoxItem Content="Item # 1 da ComboBox"/>
-                <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
-                <ComboBoxItem Content="ComboBox Item # 3"/>
-            </ComboBox>
-        </StackPanel>
-
-        <StackPanel Margin="324,99,180,287">
-            <ComboBox Height="29">
-                <ComboBoxItem Content="Item # 1 da ComboBox"/>
-                <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
-                <ComboBoxItem Content="ComboBox Item # 3"/>
-            </ComboBox>
-        </StackPanel>
-
-        <StackPanel Margin="324,133,180,260">
-            <ComboBox Height="26" RenderTransformOrigin="0.521,0.242">
-                <ComboBoxItem Content="Item # 1 da ComboBox"/>
-                <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
-                <ComboBoxItem Content="ComboBox Item # 3"/>
-            </ComboBox>
-        </StackPanel>
-        
-        <StackPanel Margin="324,166,180,212">
-            <ComboBox Height="30">
-                <ComboBoxItem Content="Item # 1 da ComboBox"/>
-                <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
-                <ComboBoxItem Content="ComboBox Item # 3"/>
-            </ComboBox>
-        </StackPanel>
-
-        <StackPanel Margin="324,205,180,168">
-            <ComboBox Height="35">
-                <ComboBoxItem Content="Item # 1 da ComboBox"/>
-                <ComboBoxItem IsSelected = " True " Content="Item # 2 da ComboBox" />
-                <ComboBoxItem Content="ComboBox Item # 3"/>
-            </ComboBox>
-        </StackPanel>
 
 
+            </Grid>
+        </Grid>
+    </StackPanel>
 
-        <Label Content="Placa Mãe" HorizontalAlignment="Left" Margin="87,59,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
-        <Label Content="Memoria RAM" HorizontalAlignment="Left" Margin="87,161,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
-        <Label Content="Fonte" HorizontalAlignment="Left" Margin="87,197,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
-
-
-        <Label Content="HD" HorizontalAlignment="Left" Margin="87,125,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
-        <Label Content="Processador" HorizontalAlignment="Left" Margin="87,101,0,0" VerticalAlignment="Top" FontSize="18" Background="#FF21E018"/>
-    </Grid>
 </Window>

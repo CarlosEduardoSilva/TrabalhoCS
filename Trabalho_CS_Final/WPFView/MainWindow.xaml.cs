@@ -27,18 +27,7 @@ namespace WPFView
             InitializeComponent();
         }
 
-        private void btnCadastrarClientes_Click(object sender, RoutedEventArgs e)
-        {
-            CadastroCliente main = new CadastroCliente();
-            Cadastrar cadastro = new Cadastrar();
-            main.Close();
-            //cadastro.Show();
-
-            
-            cadastro.ShowDialog();
-            //this.Close();
-
-        }
+        
 
 
         private void btnListarClientes_Click(object sender, RoutedEventArgs e)

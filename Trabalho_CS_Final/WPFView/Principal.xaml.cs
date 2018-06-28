@@ -34,9 +34,7 @@ namespace WPFView
             {
                 case 0:
                     GridMain.Background = Brushes.Aquamarine;
-                    ListarClientes listarCl = new ListarClientes();
-
-                    listarCl.Show();
+                    
 
                     break;
                 case 1 :

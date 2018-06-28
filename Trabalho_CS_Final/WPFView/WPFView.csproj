@@ -71,10 +71,6 @@
     <Compile Include="Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
-    <Page Include="Cadastrar.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="EditarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,15 +99,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FonteCadastro.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ListarFonte.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="HdCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,9 +131,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Cadastrar.xaml.cs">
-      <DependentUpon>Cadastrar.xaml</DependentUpon>
-    </Compile>
     <Compile Include="EditarCliente.xaml.cs">
       <DependentUpon>EditarCliente.xaml</DependentUpon>
     </Compile>
@@ -167,14 +152,8 @@
     <Compile Include="ExcluirCliente.xaml.cs">
       <DependentUpon>ExcluirCliente.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FonteCadastro.xaml.cs">
-      <DependentUpon>FonteCadastro.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ListarFonte.xaml.cs">
       <DependentUpon>ListarFonte.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="HdCadastro.xaml.cs">
-      <DependentUpon>HdCadastro.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarHd.xaml.cs">
       <DependentUpon>ListarHd.xaml</DependentUpon>
@@ -195,23 +174,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MemoriaCadastro.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ListarMemoria.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PlacaCadastro.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ListarPlacaMae.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ProcessadorCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -225,20 +192,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MemoriaCadastro.xaml.cs">
-      <DependentUpon>MemoriaCadastro.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ListarMemoria.xaml.cs">
       <DependentUpon>ListarMemoria.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlacaCadastro.xaml.cs">
-      <DependentUpon>PlacaCadastro.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ListarPlacaMae.xaml.cs">
       <DependentUpon>ListarPlacaMae.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProcessadorCadastro.xaml.cs">
-      <DependentUpon>ProcessadorCadastro.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarProcessador.xaml.cs">
       <DependentUpon>ListarProcessador.xaml</DependentUpon>

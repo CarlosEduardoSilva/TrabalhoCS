@@ -27,7 +27,11 @@
             </StackPanel>
         </Grid>
         <Grid Height="100">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="229*"/>
+                <ColumnDefinition Width="307*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0" Grid.ColumnSpan="2">
                 <Button Uid="0"  Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2"/>
                 <Button Uid="1"  Width="150" Content="CLIENTES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
                 <Button Uid="2"  Width="150" Content="PEÇAS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
@@ -37,7 +41,7 @@
                 <Button Uid="6"  Width="141" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
 
             </StackPanel>
-            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>
+            <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10,48,0,48"/>
 
         </Grid>
 

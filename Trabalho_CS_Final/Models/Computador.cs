@@ -11,11 +11,12 @@ namespace Models
 
         public string Nome_Cliente { get; set; }
 
-        public string HD { get; set; }
-        public string Processador { get; set; }
-        public string PlacaMae { get; set; }
-        public string Fonte { get; set; }
-        public string Memoria { get; set; }
+        public HD HD { get; set; }
+        public Processador Processador { get; set; }
+        public PlacaMae PlacaMae { get; set; }
+        public Fonte Fonte { get; set; }
+        public Memoria Memoria { get; set; }
+
         public decimal ValorTotal { get; set; }
 
     }

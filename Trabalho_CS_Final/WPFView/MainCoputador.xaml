@@ -96,7 +96,17 @@
                         </TransformGroup>
                     </Label.RenderTransform>
                 </Label>
+                <ComboBox x:Name="ComboBoxPlacaMae" ItemsSource="{Binding Path=placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_PlacaMae"  HorizontalAlignment="Left" Margin="259,95,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
                
+                <ComboBox x:Name="ComboBoxProcessador" ItemsSource="{Binding placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_Processador"  HorizontalAlignment="Left" Margin="259,128,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
+                <ComboBox x:Name="ComboBoxHd" ItemsSource="{Binding placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_HD"  HorizontalAlignment="Left" Margin="259,161,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
+                <ComboBox x:Name="ComboBoxMemoria" ItemsSource="{Binding placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_Memoria"  HorizontalAlignment="Left" Margin="259,194,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
+                <ComboBox x:Name="ComboBoxFonte" ItemsSource="{Binding placaMae}" DisplayMemberPath="Nome"
+                    SelectedValuePath="ID_Fonte"  HorizontalAlignment="Left" Margin="259,227,0,0" VerticalAlignment="Top" Width="165" Background="#FFB2D1D0"/>
 
 
 

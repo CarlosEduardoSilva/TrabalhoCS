@@ -22,11 +22,20 @@ namespace WPFView
     public partial class MainCoputador : Window        
 
     {
+        private readonly PlacaMaeController placaMaeController = new PlacaMaeController();
+        private readonly ProcessadorController processadorController = new ProcessadorController();
+        private readonly HDController hdController = new HDController();
+        private readonly MemoriaController memoriaController = new MemoriaController();
+        private readonly FonteController fonteController = new FonteController();
 
-        Computador pc = new Computador();
         public MainCoputador()
         {
             InitializeComponent();
+            ComboBoxPlacaMae.ItemsSource = placaMaeController.BuscarTodos();
+            ComboBoxProcessador.ItemsSource = processadorController.BuscarTodos();
+            ComboBoxHd.ItemsSource = hdController.BuscarTodos();
+            ComboBoxMemoria.ItemsSource = memoriaController.BuscarTodos();
+            ComboBoxFonte.ItemsSource = fonteController.BuscarTodos();
         }
 
         private void Listar_Loaded(object sender, RoutedEventArgs e)
@@ -38,6 +47,10 @@ namespace WPFView
         
         private void btnMontar_Click(object sender, RoutedEventArgs e)
         {
+            Computador pc = new Computador();
+            pc.PlacaMae = placaMaeController.Buscar(int.Parse(ComboBoxPlacaMae.SelectedValue.ToString()));
+
+            new ComputadorController().Salvar(pc);
 
         }
     }

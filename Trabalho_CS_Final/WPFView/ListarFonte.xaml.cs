@@ -17,34 +17,37 @@ using System.Windows.Shapes;
 namespace WPFView
 {
     /// <summary>
-    /// Lógica interna para HDListar.xaml
+    /// Lógica interna para FonteListar.xaml
     /// </summary>
-    public partial class HDListar : Window
+    public partial class ListarFonte : Window
     {
-        public HDListar()
+        public ListarFonte()
         {
             InitializeComponent();
         }
 
-        private void HD_Listar(object sender, RoutedEventArgs e)
+        private void Fonte_Listar(object sender, RoutedEventArgs e)
         {
-            HDController hd= new HDController();
-            DgHd.ItemsSource = hd.BuscarTodos();
+            FonteController fon = new FonteController();
+            DgFonte.ItemsSource = fon.BuscarTodos();
+
 
         }
 
-        private void Selection_Hd(object sender, SelectionChangedEventArgs e)
+        public void Selection_Fonte(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = ((DataGrid)sender);
 
-            HD hd = (HD)dg.Items[dg.SelectedIndex];
+            Fonte fon = (Fonte)dg.Items[dg.SelectedIndex];
 
-            EditarHd edit= new EditarHd(hd);
+            EditarFonte edit = new EditarFonte(fon);
 
 
             edit.Show();
 
             this.Close();
+
+
         }
     }
 }

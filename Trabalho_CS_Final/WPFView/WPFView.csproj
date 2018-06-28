@@ -107,7 +107,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FonteListar.xaml">
+    <Page Include="ListarFonte.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,7 +115,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HDListar.xaml">
+    <Page Include="ListarHd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,14 +170,14 @@
     <Compile Include="FonteCadastro.xaml.cs">
       <DependentUpon>FonteCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FonteListar.xaml.cs">
-      <DependentUpon>FonteListar.xaml</DependentUpon>
+    <Compile Include="ListarFonte.xaml.cs">
+      <DependentUpon>ListarFonte.xaml</DependentUpon>
     </Compile>
     <Compile Include="HdCadastro.xaml.cs">
       <DependentUpon>HdCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HDListar.xaml.cs">
-      <DependentUpon>HDListar.xaml</DependentUpon>
+    <Compile Include="ListarHd.xaml.cs">
+      <DependentUpon>ListarHd.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListaClienteExcluir.xaml.cs">
       <DependentUpon>ListaClienteExcluir.xaml</DependentUpon>
@@ -199,7 +199,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MemoriaListar.xaml">
+    <Page Include="ListarMemoria.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,7 +215,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProcessadorListar.xaml">
+    <Page Include="ListarProcessador.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -228,8 +228,8 @@
     <Compile Include="MemoriaCadastro.xaml.cs">
       <DependentUpon>MemoriaCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MemoriaListar.xaml.cs">
-      <DependentUpon>MemoriaListar.xaml</DependentUpon>
+    <Compile Include="ListarMemoria.xaml.cs">
+      <DependentUpon>ListarMemoria.xaml</DependentUpon>
     </Compile>
     <Compile Include="PlacaCadastro.xaml.cs">
       <DependentUpon>PlacaCadastro.xaml</DependentUpon>
@@ -240,8 +240,8 @@
     <Compile Include="ProcessadorCadastro.xaml.cs">
       <DependentUpon>ProcessadorCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProcessadorListar.xaml.cs">
-      <DependentUpon>ProcessadorListar.xaml</DependentUpon>
+    <Compile Include="ListarProcessador.xaml.cs">
+      <DependentUpon>ListarProcessador.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

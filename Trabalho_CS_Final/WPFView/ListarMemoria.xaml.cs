@@ -19,9 +19,9 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para MemoriaListar.xaml
     /// </summary>
-    public partial class MemoriaListar : Window
+    public partial class ListarMemoria : Window
     {
-        public MemoriaListar()
+        public ListarMemoria()
         {
             InitializeComponent();
         }

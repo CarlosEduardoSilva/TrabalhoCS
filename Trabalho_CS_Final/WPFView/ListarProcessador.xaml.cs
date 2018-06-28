@@ -19,9 +19,9 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para ProcessadorListar.xaml
     /// </summary>
-    public partial class ProcessadorListar : Window
+    public partial class ListarProcessador : Window
     {
-        public ProcessadorListar()
+        public ListarProcessador()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace WPFView
         private void Processador_Listar(object sender, RoutedEventArgs e)
         {
             ProcessadorController proc = new ProcessadorController();
-            DgProc.ItemsSource = proc.BuscarTodos();
+            DgListProc.ItemsSource = proc.BuscarTodos();
             
 
         }

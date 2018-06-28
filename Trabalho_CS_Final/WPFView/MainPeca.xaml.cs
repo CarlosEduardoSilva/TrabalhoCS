@@ -157,21 +157,27 @@ namespace WPFView
 
         private void BtnLisPro_Click(object sender, RoutedEventArgs e)
         {
+            ListarProcessador listarProcessador = new ListarProcessador();
 
+            listarProcessador.Show();
         }
 
         private void BtnLisHd_Click(object sender, RoutedEventArgs e)
         {
-
+            ListarHd listarHd = new ListarHd();
+            listarHd.Show();
         }
 
         private void BtnLisMem_Click(object sender, RoutedEventArgs e)
         {
-
+            ListarMemoria listarMemoria = new ListarMemoria();
+            listarMemoria.Show();
         }
 
         private void BtnLisFon_Click(object sender, RoutedEventArgs e)
         {
+            ListarFonte listarFonte = new ListarFonte();
+            listarFonte.Show();
 
         }
     }

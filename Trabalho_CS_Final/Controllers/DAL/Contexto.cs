@@ -20,6 +20,9 @@ namespace Controllers.DAL
         public virtual DbSet<Memoria> Memoria { get; set; }
         public virtual DbSet<PlacaMae> PlacaMae { get; set; }
         public virtual DbSet<Fonte> Fonte { get; set; }
+        public virtual DbSet<Computador> Computador { get; set; }
+
+
 
     }
 }

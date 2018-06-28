@@ -26,6 +26,7 @@
         <Grid Height="80">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
                 <Button Uid="0"  Width="191" Content="MONTAR COMPUTADOR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" />
+                <Button Uid="0"  Width="191" Content="LISTAR COMPUTADOR" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFA2A2A2" Click="Listar_Computador" />
 
             </StackPanel>
             <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FFA2A2A2" HorizontalAlignment="Left" Margin="10 0"/>

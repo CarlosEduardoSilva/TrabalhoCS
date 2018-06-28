@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +9,9 @@ namespace Models
 {
     public class Computador
     {
-
-        public string Nome_Cliente { get; set; }
+        public int ID_Cliente { get; set; }
+        [Key]
+        public int ID_Computador{ get; set; }
 
         public HD HD { get; set; }
         public Processador Processador { get; set; }

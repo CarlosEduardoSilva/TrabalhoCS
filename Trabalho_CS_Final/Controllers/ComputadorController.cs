@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    public class PlacaMaeController : BaseManager<PlacaMae>
+    public class ComputadorController : BaseManager<Computador>
     {
+
         private Contexto contexto = new Contexto();
 
-        public void Atualizar(PlacaMae entidade)
+        public void Atualizar(Computador entidade)
         {
             contexto.Entry(entidade).State =
             System.Data.Entity.EntityState.Modified;
@@ -20,31 +21,33 @@ namespace Controllers
             contexto.SaveChanges();
         }
 
-        public PlacaMae Buscar(int id)
+        public Computador Buscar(int id)
         {
-            return contexto.PlacaMae.Find(id);
+            return contexto.Computador.Find(id);
         }
 
-        public List<PlacaMae> BuscarTodos()
+        public List<Computador> BuscarTodos()
         {
-            return contexto.PlacaMae.ToList();
+            return contexto.Computador.ToList();
         }
 
         public void Excluir(int id)
         {
-            PlacaMae p = Buscar(id);
+            Computador p = Buscar(id);
 
             if (p != null)
             {
-                contexto.PlacaMae.Remove(p);
+                contexto.Computador.Remove(p);
                 contexto.SaveChanges();
             }
         }
 
-        public void Salvar(PlacaMae entidade)
+        public void Salvar(Computador entidade)
         {
-            contexto.PlacaMae.Add(entidade);
+            contexto.Computador.Add(entidade);
             contexto.SaveChanges();
         }
+
+        
     }
 }

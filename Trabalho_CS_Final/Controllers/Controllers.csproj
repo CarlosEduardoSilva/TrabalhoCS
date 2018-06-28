@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BaseManager.cs" />
     <Compile Include="ClienteController.cs" />
+    <Compile Include="ComputadorController.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="FonteController.cs" />
     <Compile Include="HDController.cs" />
@@ -61,6 +62,10 @@
     <Compile Include="Migrations\201806251349081_Mudanca.cs" />
     <Compile Include="Migrations\201806251349081_Mudanca.Designer.cs">
       <DependentUpon>201806251349081_Mudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806281300589_Initial.cs" />
+    <Compile Include="Migrations\201806281300589_Initial.Designer.cs">
+      <DependentUpon>201806281300589_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlacaMaeController.cs" />
@@ -83,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806251349081_Mudanca.resx">
       <DependentUpon>201806251349081_Mudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806281300589_Initial.resx">
+      <DependentUpon>201806281300589_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,7 +19,7 @@ namespace WPFView
     /// <summary>
     /// Lógica interna para MainCoputador.xaml
     /// </summary>
-    public partial class MainCoputador : Window        
+    public partial class MainCoputador : Window
 
     {
         private readonly PlacaMaeController placaMaeController = new PlacaMaeController();
@@ -40,17 +40,39 @@ namespace WPFView
 
         private void Listar_Loaded(object sender, RoutedEventArgs e)
         {
-           
+
 
         }
 
-        
+
         private void btnMontar_Click(object sender, RoutedEventArgs e)
         {
-            Computador pc = new Computador();
-            pc.PlacaMae = placaMaeController.Buscar(int.Parse(ComboBoxPlacaMae.SelectedValue.ToString()));
 
-            new ComputadorController().Salvar(pc);
+            try
+            {
+                Computador pc = new Computador();
+                pc.PlacaMae = placaMaeController.Buscar(int.Parse(ComboBoxPlacaMae.SelectedValue.ToString()));
+                pc.Processador = processadorController.Buscar(int.Parse(ComboBoxProcessador.SelectedValue.ToString()));
+                pc.HD = hdController.Buscar(int.Parse(ComboBoxHd.SelectedValue.ToString()));
+                pc.Memoria = memoriaController.Buscar(int.Parse(ComboBoxMemoria.SelectedValue.ToString()));
+                pc.Fonte = fonteController.Buscar(int.Parse(ComboBoxMemoria.SelectedValue.ToString()));
+
+
+                ComputadorController montarPC = new ComputadorController();
+
+                montarPC.Salvar(pc);
+
+
+                MessageBox.Show("Computador salvo com exito!");
+
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar computador (" + ex.Message + ")");
+
+            }
+
 
         }
     }

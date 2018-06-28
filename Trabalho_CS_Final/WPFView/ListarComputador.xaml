@@ -34,7 +34,17 @@
             <DataGrid x:Name="dgComputador" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
                   CanUserAddRows="False" 
                   CanUserDeleteRows="False" Height="440" Width="692" SelectionChanged="Selection_Computador">
-                
+
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Placa Mãe" Binding="{Binding PlacaMae.Nome}" />
+                    <DataGridTextColumn Header="Processador" Binding="{Binding Processador.Nome}" />
+                    <DataGridTextColumn Header="Hd" Binding="{Binding Hd.Nome}" />
+                    <DataGridTextColumn Header="Memoria RAM" Binding="{Binding Memoria.Nome}" />
+                    <DataGridTextColumn Header="Fonte" Binding="{Binding Fonte.Nome}" />
+
+                </DataGrid.Columns>
+
 
             </DataGrid>
 

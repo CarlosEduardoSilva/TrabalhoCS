@@ -49,11 +49,11 @@ namespace WPFView
         {
 
             try
-            {
+            {   
                 Computador pc = new Computador();
                 pc.PlacamaeID = int.Parse(ComboBoxPlacaMae.SelectedValue.ToString());
                 pc.ProcessadorID = int.Parse(ComboBoxProcessador.SelectedValue.ToString());
-
+                // Tamo ferrado
                 pc.HDID = int.Parse(ComboBoxHd.SelectedValue.ToString());
                 pc.MemoriaID = int.Parse(ComboBoxMemoria.SelectedValue.ToString());
                 pc.FonteID = int.Parse(ComboBoxMemoria.SelectedValue.ToString());

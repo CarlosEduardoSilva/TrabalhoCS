@@ -17,13 +17,13 @@ namespace Models
         public HD HD { get; set; }
 
         public int ProcessadorID { get; set; }
-        public virtual Processador Processador { get; set; }
+        public virtual Processador _Processador { get; set; }
 
         public int PlacamaeID { get; set; }
-        public PlacaMae PlacaMae { get; set; }
+        public virtual PlacaMae PlacaMae { get; set; }
 
         public int FonteID { get; set; }
-        public Fonte Fonte { get; set; }
+        public virtual Fonte Fonte { get; set; }
 
         public int MemoriaID { get; set; }
         public Memoria Memoria { get; set; }
